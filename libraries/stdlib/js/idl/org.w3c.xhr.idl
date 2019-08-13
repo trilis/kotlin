@@ -1,7 +1,7 @@
 package org.w3c.xhr;
 
 
-// Downloaded from https://raw.githubusercontent.com/whatwg/xhr/master/Overview.src.html
+// Downloaded from https://raw.githubusercontent.com/whatwg/xhr/master/xhr.bs
 [Exposed=(Window,DedicatedWorker,SharedWorker)]
 interface XMLHttpRequestEventTarget : EventTarget {
   // event handlers
@@ -47,7 +47,7 @@ interface XMLHttpRequest : XMLHttpRequestEventTarget {
   void setRequestHeader(ByteString name, ByteString value);
            attribute unsigned long timeout;
            attribute boolean withCredentials;
-  readonly attribute XMLHttpRequestUpload upload;
+  [SameObject] readonly attribute XMLHttpRequestUpload upload;
   void send(optional (Document or BodyInit)? body = null);
   void abort();
 
@@ -69,16 +69,16 @@ typedef (File or USVString) FormDataEntryValue;
  Exposed=(Window,Worker)]
 interface FormData {
   void append(USVString name, USVString value);
-  void append(USVString name, Blob value, optional USVString filename);
+  void append(USVString name, Blob blobValue, optional USVString filename);
   void delete(USVString name);
   FormDataEntryValue? get(USVString name);
   sequence<FormDataEntryValue> getAll(USVString name);
   boolean has(USVString name);
   void set(USVString name, USVString value);
-  void set(USVString name, Blob value, optional USVString filename);
+  void set(USVString name, Blob blobValue, optional USVString filename);
   iterable<USVString, FormDataEntryValue>;
 };
-[Constructor(DOMString type, optional ProgressEventInit eventInitDict),
+[Constructor(DOMString type, optional ProgressEventInit eventInitDict = {}),
  Exposed=(Window,DedicatedWorker,SharedWorker)]
 interface ProgressEvent : Event {
   readonly attribute boolean lengthComputable;
