@@ -107,7 +107,7 @@ private val urls = listOf(
     "https://www.w3.org/TR/pointerevents/" to "org.w3c.dom.pointerevents",
 
     "https://drafts.csswg.org/cssom/" to "org.w3c.dom.css",
-    "https://www.w3.org/TR/css-masking-1/" to "org.w3c.css.masking",
+    "https://drafts.fxtf.org/css-masking-1/" to "org.w3c.css.masking",
 
     "https://w3c.github.io/mediacapture-main/" to "org.w3c.dom.mediacapture",
     "https://www.w3.org/TR/DOM-Parsing/" to "org.w3c.dom.parsing",
