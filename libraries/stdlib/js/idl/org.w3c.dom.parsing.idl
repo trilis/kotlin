@@ -18,4 +18,11 @@ partial interface Element {
 partial interface Range {
  [CEReactions, NewObject] DocumentFragment createContextualFragment (DOMString fragment);
 };
+enum SupportedType {
+    "text/html",
+    "text/xml",
+    "application/xml",
+    "application/xhtml+xml",
+    "image/svg+xml"
+};
 
