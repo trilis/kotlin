@@ -7,3 +7,4 @@ callback Function = any (any... arguments);
 callback VoidFunction = void ();
 
 typedef Window WindowProxy;
+typedef (ArrayBufferView or ArrayBuffer) BufferSource;

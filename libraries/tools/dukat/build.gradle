@@ -6,7 +6,7 @@ repositories {
 
 dependencies {
     implementation kotlinStdlib()
-    implementation "org.jetbrains:dukat:0.0.16"
+    implementation "org.jetbrains.dukat:dukat:0.0.16"
     implementation "org.jsoup:jsoup:1.8.2"
 }
 
