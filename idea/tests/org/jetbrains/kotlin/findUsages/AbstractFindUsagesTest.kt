@@ -164,7 +164,13 @@ abstract class AbstractFindUsagesTest : KotlinLightCodeInsightFixtureTestCase() 
 
             val providers = Extensions.getExtensions(UsageTypeProvider.EP_NAME)
             return providers
-                .mapNotNull { it.getUsageType(element) }
+                .mapNotNull {
+                    try {
+                        it.getUsageType(element)
+                    } catch (e: NoSuchElementException) {
+                        null
+                    }
+                }
                 .firstOrNull()
                 ?: UsageType.UNCLASSIFIED
         }
