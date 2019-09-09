@@ -21,6 +21,7 @@ import org.w3c.dom.pointerevents.*
 import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -38,25 +39,12 @@ external open class Headers(init: dynamic = definedExternally) {
 }
 
 /**
- * Exposes the JavaScript [Body](https://developer.mozilla.org/en/docs/Web/API/Body) to Kotlin
- */
-external interface Body {
-    val bodyUsed: Boolean
-    fun arrayBuffer(): Promise<ArrayBuffer>
-    fun blob(): Promise<Blob>
-    fun formData(): Promise<FormData>
-    fun json(): Promise<Any?>
-    fun text(): Promise<String>
-}
-
-/**
  * Exposes the JavaScript [Request](https://developer.mozilla.org/en/docs/Web/API/Request) to Kotlin
  */
-external open class Request(input: dynamic, init: RequestInit = definedExternally) : Body {
+external open class Request(input: dynamic, init: RequestInit = definedExternally) {
     open val method: String
     open val url: String
     open val headers: Headers
-    open val type: RequestType
     open val destination: RequestDestination
     open val referrer: String
     open val referrerPolicy: dynamic
@@ -66,13 +54,17 @@ external open class Request(input: dynamic, init: RequestInit = definedExternall
     open val redirect: RequestRedirect
     open val integrity: String
     open val keepalive: Boolean
-    override val bodyUsed: Boolean
+    open val isReloadNavigation: Boolean
+    open val isHistoryNavigation: Boolean
+    open val signal: AbortSignal
+    var body: dynamic
+    var bodyUsed: Boolean
     fun clone(): Request
-    override fun arrayBuffer(): Promise<ArrayBuffer>
-    override fun blob(): Promise<Blob>
-    override fun formData(): Promise<FormData>
-    override fun json(): Promise<Any?>
-    override fun text(): Promise<String>
+    fun arrayBuffer(): Promise<ArrayBuffer>
+    fun blob(): Promise<Blob>
+    fun formData(): Promise<FormData>
+    fun json(): Promise<Any?>
+    fun text(): Promise<String>
 }
 
 external interface RequestInit {
@@ -109,13 +101,16 @@ external interface RequestInit {
     var keepalive: Boolean?
         get() = definedExternally
         set(value) = definedExternally
+    var signal: AbortSignal?
+        get() = definedExternally
+        set(value) = definedExternally
     var window: Any?
         get() = definedExternally
         set(value) = definedExternally
 }
 
 @kotlin.internal.InlineOnly
-inline fun RequestInit(method: String? = undefined, headers: dynamic = undefined, body: dynamic = undefined, referrer: String? = undefined, referrerPolicy: dynamic = undefined, mode: RequestMode? = undefined, credentials: RequestCredentials? = undefined, cache: RequestCache? = undefined, redirect: RequestRedirect? = undefined, integrity: String? = undefined, keepalive: Boolean? = undefined, window: Any? = undefined): RequestInit {
+inline fun RequestInit(method: String? = undefined, headers: dynamic = undefined, body: dynamic = undefined, referrer: String? = undefined, referrerPolicy: dynamic = undefined, mode: RequestMode? = undefined, credentials: RequestCredentials? = undefined, cache: RequestCache? = undefined, redirect: RequestRedirect? = undefined, integrity: String? = undefined, keepalive: Boolean? = undefined, signal: AbortSignal? = undefined, window: Any? = undefined): RequestInit {
     val o = js("({})")
     o["method"] = method
     o["headers"] = headers
@@ -128,6 +123,7 @@ inline fun RequestInit(method: String? = undefined, headers: dynamic = undefined
     o["redirect"] = redirect
     o["integrity"] = integrity
     o["keepalive"] = keepalive
+    o["signal"] = signal
     o["window"] = window
     return o
 }
@@ -135,7 +131,7 @@ inline fun RequestInit(method: String? = undefined, headers: dynamic = undefined
 /**
  * Exposes the JavaScript [Response](https://developer.mozilla.org/en/docs/Web/API/Response) to Kotlin
  */
-external open class Response(body: dynamic = definedExternally, init: ResponseInit = definedExternally) : Body {
+external open class Response(body: dynamic = definedExternally, init: ResponseInit = definedExternally) {
     open val type: ResponseType
     open val url: String
     open val redirected: Boolean
@@ -143,15 +139,15 @@ external open class Response(body: dynamic = definedExternally, init: ResponseIn
     open val ok: Boolean
     open val statusText: String
     open val headers: Headers
-    open val body: dynamic
     open val trailer: Promise<Headers>
-    override val bodyUsed: Boolean
+    var body: dynamic
+    var bodyUsed: Boolean
     fun clone(): Response
-    override fun arrayBuffer(): Promise<ArrayBuffer>
-    override fun blob(): Promise<Blob>
-    override fun formData(): Promise<FormData>
-    override fun json(): Promise<Any?>
-    override fun text(): Promise<String>
+    fun arrayBuffer(): Promise<ArrayBuffer>
+    fun blob(): Promise<Blob>
+    fun formData(): Promise<FormData>
+    fun json(): Promise<Any?>
+    fun text(): Promise<String>
 
     companion object {
         fun error(): Response
@@ -163,7 +159,7 @@ external interface ResponseInit {
     var status: Short? /* = 200 */
         get() = definedExternally
         set(value) = definedExternally
-    var statusText: String? /* = "OK" */
+    var statusText: String? /* = "" */
         get() = definedExternally
         set(value) = definedExternally
     var headers: dynamic
@@ -172,7 +168,7 @@ external interface ResponseInit {
 }
 
 @kotlin.internal.InlineOnly
-inline fun ResponseInit(status: Short? = 200, statusText: String? = "OK", headers: dynamic = undefined): ResponseInit {
+inline fun ResponseInit(status: Short? = 200, statusText: String? = "", headers: dynamic = undefined): ResponseInit {
     val o = js("({})")
     o["status"] = status
     o["statusText"] = statusText
@@ -180,27 +176,7 @@ inline fun ResponseInit(status: Short? = 200, statusText: String? = "OK", header
     return o
 }
 
-/* please, don't implement this interface! */
-@Suppress("NESTED_CLASS_IN_EXTERNAL_INTERFACE")
-external interface RequestType {
-    companion object
-}
-
-inline val RequestType.Companion.EMPTY: RequestType get() = "".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.AUDIO: RequestType get() = "audio".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.FONT: RequestType get() = "font".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.IMAGE: RequestType get() = "image".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.SCRIPT: RequestType get() = "script".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.STYLE: RequestType get() = "style".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.TRACK: RequestType get() = "track".asDynamic().unsafeCast<RequestType>()
-
-inline val RequestType.Companion.VIDEO: RequestType get() = "video".asDynamic().unsafeCast<RequestType>()
+external interface BufferSource
 
 /* please, don't implement this interface! */
 @Suppress("NESTED_CLASS_IN_EXTERNAL_INTERFACE")
@@ -209,6 +185,10 @@ external interface RequestDestination {
 }
 
 inline val RequestDestination.Companion.EMPTY: RequestDestination get() = "".asDynamic().unsafeCast<RequestDestination>()
+
+inline val RequestDestination.Companion.AUDIO: RequestDestination get() = "audio".asDynamic().unsafeCast<RequestDestination>()
+
+inline val RequestDestination.Companion.AUDIOWORKLET: RequestDestination get() = "audioworklet".asDynamic().unsafeCast<RequestDestination>()
 
 inline val RequestDestination.Companion.DOCUMENT: RequestDestination get() = "document".asDynamic().unsafeCast<RequestDestination>()
 
@@ -220,19 +200,21 @@ inline val RequestDestination.Companion.IMAGE: RequestDestination get() = "image
 
 inline val RequestDestination.Companion.MANIFEST: RequestDestination get() = "manifest".asDynamic().unsafeCast<RequestDestination>()
 
-inline val RequestDestination.Companion.MEDIA: RequestDestination get() = "media".asDynamic().unsafeCast<RequestDestination>()
-
 inline val RequestDestination.Companion.OBJECT: RequestDestination get() = "object".asDynamic().unsafeCast<RequestDestination>()
+
+inline val RequestDestination.Companion.PAINTWORKLET: RequestDestination get() = "paintworklet".asDynamic().unsafeCast<RequestDestination>()
 
 inline val RequestDestination.Companion.REPORT: RequestDestination get() = "report".asDynamic().unsafeCast<RequestDestination>()
 
 inline val RequestDestination.Companion.SCRIPT: RequestDestination get() = "script".asDynamic().unsafeCast<RequestDestination>()
 
-inline val RequestDestination.Companion.SERVICEWORKER: RequestDestination get() = "serviceworker".asDynamic().unsafeCast<RequestDestination>()
-
 inline val RequestDestination.Companion.SHAREDWORKER: RequestDestination get() = "sharedworker".asDynamic().unsafeCast<RequestDestination>()
 
 inline val RequestDestination.Companion.STYLE: RequestDestination get() = "style".asDynamic().unsafeCast<RequestDestination>()
+
+inline val RequestDestination.Companion.TRACK: RequestDestination get() = "track".asDynamic().unsafeCast<RequestDestination>()
+
+inline val RequestDestination.Companion.VIDEO: RequestDestination get() = "video".asDynamic().unsafeCast<RequestDestination>()
 
 inline val RequestDestination.Companion.WORKER: RequestDestination get() = "worker".asDynamic().unsafeCast<RequestDestination>()
 

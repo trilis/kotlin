@@ -21,6 +21,7 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -29,14 +30,11 @@ import org.w3c.xhr.*
 /**
  * Exposes the JavaScript [SVGClipPathElement](https://developer.mozilla.org/en/docs/Web/API/SVGClipPathElement) to Kotlin
  */
-external abstract class SVGClipPathElement : SVGElement, SVGUnitTypes {
+external open class SVGClipPathElement : SVGElement {
     open val clipPathUnits: SVGAnimatedEnumeration
     open val transform: SVGAnimatedTransformList
 
     companion object {
-        val SVG_UNIT_TYPE_UNKNOWN: Short
-        val SVG_UNIT_TYPE_USERSPACEONUSE: Short
-        val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Short
         val ELEMENT_NODE: Short
         val ATTRIBUTE_NODE: Short
         val TEXT_NODE: Short
@@ -61,7 +59,7 @@ external abstract class SVGClipPathElement : SVGElement, SVGUnitTypes {
 /**
  * Exposes the JavaScript [SVGMaskElement](https://developer.mozilla.org/en/docs/Web/API/SVGMaskElement) to Kotlin
  */
-external abstract class SVGMaskElement : SVGElement, SVGUnitTypes {
+external open class SVGMaskElement : SVGElement {
     open val maskUnits: SVGAnimatedEnumeration
     open val maskContentUnits: SVGAnimatedEnumeration
     open val x: SVGAnimatedLength
@@ -70,9 +68,6 @@ external abstract class SVGMaskElement : SVGElement, SVGUnitTypes {
     open val height: SVGAnimatedLength
 
     companion object {
-        val SVG_UNIT_TYPE_UNKNOWN: Short
-        val SVG_UNIT_TYPE_USERSPACEONUSE: Short
-        val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Short
         val ELEMENT_NODE: Short
         val ATTRIBUTE_NODE: Short
         val TEXT_NODE: Short

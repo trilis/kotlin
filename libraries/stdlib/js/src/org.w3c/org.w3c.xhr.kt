@@ -22,6 +22,7 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -29,17 +30,17 @@ import org.w3c.workers.*
 /**
  * Exposes the JavaScript [XMLHttpRequestEventTarget](https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequestEventTarget) to Kotlin
  */
-external abstract class XMLHttpRequestEventTarget : EventTarget {
-    open var onloadstart: ((ProgressEvent) -> dynamic)?
-    open var onprogress: ((ProgressEvent) -> dynamic)?
-    open var onabort: ((Event) -> dynamic)?
-    open var onerror: ((Event) -> dynamic)?
-    open var onload: ((Event) -> dynamic)?
-    open var ontimeout: ((Event) -> dynamic)?
-    open var onloadend: ((Event) -> dynamic)?
+external open class XMLHttpRequestEventTarget : EventTarget {
+    var onloadstart: ((ProgressEvent) -> dynamic)?
+    var onprogress: ((ProgressEvent) -> dynamic)?
+    var onabort: ((Event) -> dynamic)?
+    var onerror: ((Event) -> dynamic)?
+    var onload: ((Event) -> dynamic)?
+    var ontimeout: ((Event) -> dynamic)?
+    var onloadend: ((Event) -> dynamic)?
 }
 
-external abstract class XMLHttpRequestUpload : XMLHttpRequestEventTarget
+external open class XMLHttpRequestUpload : XMLHttpRequestEventTarget
 
 /**
  * Exposes the JavaScript [XMLHttpRequest](https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest) to Kotlin
@@ -80,13 +81,13 @@ external open class XMLHttpRequest : XMLHttpRequestEventTarget {
  */
 external open class FormData(form: HTMLFormElement = definedExternally) {
     fun append(name: String, value: String)
-    fun append(name: String, value: Blob, filename: String = definedExternally)
+    fun append(name: String, blobValue: Blob, filename: String = definedExternally)
     fun delete(name: String)
     fun get(name: String): dynamic
     fun getAll(name: String): Array<dynamic>
     fun has(name: String): Boolean
     fun set(name: String, value: String)
-    fun set(name: String, value: Blob, filename: String = definedExternally)
+    fun set(name: String, blobValue: Blob, filename: String = definedExternally)
 }
 
 /**

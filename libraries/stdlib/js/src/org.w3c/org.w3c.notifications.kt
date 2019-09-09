@@ -22,6 +22,7 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.performance.*
 import org.w3c.workers.*
 import org.w3c.xhr.*
@@ -31,7 +32,9 @@ import org.w3c.xhr.*
  */
 external open class Notification(title: String, options: NotificationOptions = definedExternally) : EventTarget {
     var onclick: ((MouseEvent) -> dynamic)?
+    var onshow: ((Event) -> dynamic)?
     var onerror: ((Event) -> dynamic)?
+    var onclose: ((Event) -> dynamic)?
     open val title: String
     open val dir: NotificationDirection
     open val lang: String
@@ -40,14 +43,11 @@ external open class Notification(title: String, options: NotificationOptions = d
     open val image: String
     open val icon: String
     open val badge: String
-    open val sound: String
     open val vibrate: Array<out Int>
     open val timestamp: Number
     open val renotify: Boolean
     open val silent: Boolean
-    open val noscreen: Boolean
     open val requireInteraction: Boolean
-    open val sticky: Boolean
     open val data: Any?
     open val actions: Array<out NotificationAction>
     fun close()
@@ -81,9 +81,6 @@ external interface NotificationOptions {
     var badge: String?
         get() = definedExternally
         set(value) = definedExternally
-    var sound: String?
-        get() = definedExternally
-        set(value) = definedExternally
     var vibrate: dynamic
         get() = definedExternally
         set(value) = definedExternally
@@ -96,13 +93,7 @@ external interface NotificationOptions {
     var silent: Boolean? /* = false */
         get() = definedExternally
         set(value) = definedExternally
-    var noscreen: Boolean? /* = false */
-        get() = definedExternally
-        set(value) = definedExternally
     var requireInteraction: Boolean? /* = false */
-        get() = definedExternally
-        set(value) = definedExternally
-    var sticky: Boolean? /* = false */
         get() = definedExternally
         set(value) = definedExternally
     var data: Any? /* = null */
@@ -114,7 +105,7 @@ external interface NotificationOptions {
 }
 
 @kotlin.internal.InlineOnly
-inline fun NotificationOptions(dir: NotificationDirection? = NotificationDirection.AUTO, lang: String? = "", body: String? = "", tag: String? = "", image: String? = undefined, icon: String? = undefined, badge: String? = undefined, sound: String? = undefined, vibrate: dynamic = undefined, timestamp: Number? = undefined, renotify: Boolean? = false, silent: Boolean? = false, noscreen: Boolean? = false, requireInteraction: Boolean? = false, sticky: Boolean? = false, data: Any? = null, actions: Array<NotificationAction>? = arrayOf()): NotificationOptions {
+inline fun NotificationOptions(dir: NotificationDirection? = NotificationDirection.AUTO, lang: String? = "", body: String? = "", tag: String? = "", image: String? = undefined, icon: String? = undefined, badge: String? = undefined, vibrate: dynamic = undefined, timestamp: Number? = undefined, renotify: Boolean? = false, silent: Boolean? = false, requireInteraction: Boolean? = false, data: Any? = null, actions: Array<NotificationAction>? = arrayOf()): NotificationOptions {
     val o = js("({})")
     o["dir"] = dir
     o["lang"] = lang
@@ -123,14 +114,11 @@ inline fun NotificationOptions(dir: NotificationDirection? = NotificationDirecti
     o["image"] = image
     o["icon"] = icon
     o["badge"] = badge
-    o["sound"] = sound
     o["vibrate"] = vibrate
     o["timestamp"] = timestamp
     o["renotify"] = renotify
     o["silent"] = silent
-    o["noscreen"] = noscreen
     o["requireInteraction"] = requireInteraction
-    o["sticky"] = sticky
     o["data"] = data
     o["actions"] = actions
     return o

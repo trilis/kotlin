@@ -21,6 +21,7 @@ import org.w3c.dom.pointerevents.*
 import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -32,21 +33,26 @@ import org.w3c.xhr.*
 external open class Blob(blobParts: Array<dynamic> = definedExternally, options: BlobPropertyBag = definedExternally) : ImageBitmapSource {
     open val size: Number
     open val type: String
-    open val isClosed: Boolean
     fun slice(start: Int = definedExternally, end: Int = definedExternally, contentType: String = definedExternally): Blob
-    fun close()
+    fun stream(): dynamic
+    fun text(): Promise<String>
+    fun arrayBuffer(): Promise<ArrayBuffer>
 }
 
 external interface BlobPropertyBag {
     var type: String? /* = "" */
         get() = definedExternally
         set(value) = definedExternally
+    var endings: EndingType? /* = EndingType.TRANSPARENT */
+        get() = definedExternally
+        set(value) = definedExternally
 }
 
 @kotlin.internal.InlineOnly
-inline fun BlobPropertyBag(type: String? = ""): BlobPropertyBag {
+inline fun BlobPropertyBag(type: String? = "", endings: EndingType? = EndingType.TRANSPARENT): BlobPropertyBag {
     val o = js("({})")
     o["type"] = type
+    o["endings"] = endings
     return o
 }
 
@@ -65,10 +71,11 @@ external interface FilePropertyBag : BlobPropertyBag {
 }
 
 @kotlin.internal.InlineOnly
-inline fun FilePropertyBag(lastModified: Int? = undefined, type: String? = ""): FilePropertyBag {
+inline fun FilePropertyBag(lastModified: Int? = undefined, type: String? = "", endings: EndingType? = EndingType.TRANSPARENT): FilePropertyBag {
     val o = js("({})")
     o["lastModified"] = lastModified
     o["type"] = type
+    o["endings"] = endings
     return o
 }
 
@@ -76,7 +83,6 @@ inline fun FilePropertyBag(lastModified: Int? = undefined, type: String? = ""): 
  * Exposes the JavaScript [FileList](https://developer.mozilla.org/en/docs/Web/API/FileList) to Kotlin
  */
 external abstract class FileList : ItemArrayLike<File> {
-    override val length: Int
     override fun item(index: Int): File?
 }
 
@@ -98,7 +104,7 @@ external open class FileReader : EventTarget {
     var onloadend: ((Event) -> dynamic)?
     fun readAsArrayBuffer(blob: Blob)
     fun readAsBinaryString(blob: Blob)
-    fun readAsText(blob: Blob, label: String = definedExternally)
+    fun readAsText(blob: Blob, encoding: String = definedExternally)
     fun readAsDataURL(blob: Blob)
     fun abort()
 
@@ -115,6 +121,18 @@ external open class FileReader : EventTarget {
 external open class FileReaderSync {
     fun readAsArrayBuffer(blob: Blob): ArrayBuffer
     fun readAsBinaryString(blob: Blob): String
-    fun readAsText(blob: Blob, label: String = definedExternally): String
+    fun readAsText(blob: Blob, encoding: String = definedExternally): String
     fun readAsDataURL(blob: Blob): String
 }
+
+external interface BufferSource
+
+/* please, don't implement this interface! */
+@Suppress("NESTED_CLASS_IN_EXTERNAL_INTERFACE")
+external interface EndingType {
+    companion object
+}
+
+inline val EndingType.Companion.TRANSPARENT: EndingType get() = "transparent".asDynamic().unsafeCast<EndingType>()
+
+inline val EndingType.Companion.NATIVE: EndingType get() = "native".asDynamic().unsafeCast<EndingType>()

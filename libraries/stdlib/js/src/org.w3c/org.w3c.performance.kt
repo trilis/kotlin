@@ -22,6 +22,7 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.workers.*
 import org.w3c.xhr.*
@@ -29,14 +30,12 @@ import org.w3c.xhr.*
 /**
  * Exposes the JavaScript [Performance](https://developer.mozilla.org/en/docs/Web/API/Performance) to Kotlin
  */
-external abstract class Performance : EventTarget {
+external open class Performance : EventTarget {
+    open val timeOrigin: Double
     open val timing: PerformanceTiming
     open val navigation: PerformanceNavigation
     fun now(): Double
-}
-
-external interface GlobalPerformance {
-    val performance: Performance
+    fun toJSON(): dynamic
 }
 
 /**

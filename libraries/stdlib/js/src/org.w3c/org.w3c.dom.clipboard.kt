@@ -21,6 +21,7 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -59,11 +60,36 @@ external open class ClipboardEvent(type: String, eventInitDict: ClipboardEventIn
 /**
  * Exposes the JavaScript [Clipboard](https://developer.mozilla.org/en/docs/Web/API/Clipboard) to Kotlin
  */
-external abstract class Clipboard : EventTarget {
-    fun read(): Promise<DataTransfer>
+external open class Clipboard : EventTarget {
+    fun read(): Promise<Array<ClipboardItem>>
     fun readText(): Promise<String>
-    fun write(data: DataTransfer): Promise<Unit>
+    fun write(data: Array<ClipboardItem>): Promise<Unit>
     fun writeText(data: String): Promise<Unit>
+}
+
+external open class ClipboardItem(items: Promise<dynamic>, options: ClipboardItemOptions = definedExternally) {
+    open val presentationStyle: PresentationStyle
+    open val lastModified: Int
+    open val delayed: Boolean
+    open val types: Array<out String>
+    fun getType(type: String): Promise<Blob>
+
+    companion object {
+        fun createDelayed(items: () -> Promise<dynamic>, options: ClipboardItemOptions = definedExternally): ClipboardItem
+    }
+}
+
+external interface ClipboardItemOptions {
+    var presentationStyle: PresentationStyle? /* = PresentationStyle.UNSPECIFIED */
+        get() = definedExternally
+        set(value) = definedExternally
+}
+
+@kotlin.internal.InlineOnly
+inline fun ClipboardItemOptions(presentationStyle: PresentationStyle? = PresentationStyle.UNSPECIFIED): ClipboardItemOptions {
+    val o = js("({})")
+    o["presentationStyle"] = presentationStyle
+    return o
 }
 
 external interface ClipboardPermissionDescriptor {
@@ -78,3 +104,15 @@ inline fun ClipboardPermissionDescriptor(allowWithoutGesture: Boolean? = false):
     o["allowWithoutGesture"] = allowWithoutGesture
     return o
 }
+
+/* please, don't implement this interface! */
+@Suppress("NESTED_CLASS_IN_EXTERNAL_INTERFACE")
+external interface PresentationStyle {
+    companion object
+}
+
+inline val PresentationStyle.Companion.UNSPECIFIED: PresentationStyle get() = "unspecified".asDynamic().unsafeCast<PresentationStyle>()
+
+inline val PresentationStyle.Companion.INLINE: PresentationStyle get() = "inline".asDynamic().unsafeCast<PresentationStyle>()
+
+inline val PresentationStyle.Companion.ATTACHMENT: PresentationStyle get() = "attachment".asDynamic().unsafeCast<PresentationStyle>()

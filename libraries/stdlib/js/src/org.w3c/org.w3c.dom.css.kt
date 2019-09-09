@@ -21,30 +21,30 @@ import org.w3c.dom.svg.*
 import org.w3c.dom.url.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
 import org.w3c.xhr.*
 
-external abstract class MediaList : ItemArrayLike<String> {
-    open var mediaText: String
-    override val length: Int
-    fun appendMedium(medium: String)
-    fun deleteMedium(medium: String)
-    override fun item(index: Int): String?
+external abstract class MediaList : ItemArrayLike<CSSOMString> {
+    open var mediaText: dynamic
+    fun appendMedium(medium: dynamic)
+    fun deleteMedium(medium: dynamic)
+    override fun item(index: Int): dynamic
 }
 
 @kotlin.internal.InlineOnly
-inline operator fun MediaList.get(index: Int): String? = asDynamic()[index]
+inline operator fun MediaList.get(index: Int): dynamic = asDynamic()[index]
 
 /**
  * Exposes the JavaScript [StyleSheet](https://developer.mozilla.org/en/docs/Web/API/StyleSheet) to Kotlin
  */
 external abstract class StyleSheet {
-    open val type: String
+    open val type: dynamic
     open val href: String?
     open val ownerNode: UnionElementOrProcessingInstruction?
-    open val parentStyleSheet: StyleSheet?
+    open val parentStyleSheet: CSSStyleSheet?
     open val title: String?
     open val media: MediaList
     open var disabled: Boolean
@@ -56,34 +56,27 @@ external abstract class StyleSheet {
 external abstract class CSSStyleSheet : StyleSheet {
     open val ownerRule: CSSRule?
     open val cssRules: CSSRuleList
-    fun insertRule(rule: String, index: Int): Int
+    open val rules: CSSRuleList
+    fun insertRule(rule: dynamic, index: Int = definedExternally): Int
     fun deleteRule(index: Int)
+    fun addRule(selector: String = definedExternally, style: String = definedExternally, index: Int = definedExternally): Int
+    fun removeRule(index: Int = definedExternally)
 }
 
 /**
  * Exposes the JavaScript [StyleSheetList](https://developer.mozilla.org/en/docs/Web/API/StyleSheetList) to Kotlin
  */
-external abstract class StyleSheetList : ItemArrayLike<StyleSheet> {
-    override val length: Int
-    override fun item(index: Int): StyleSheet?
+external abstract class StyleSheetList : ItemArrayLike<CSSStyleSheet> {
+    override fun item(index: Int): CSSStyleSheet?
 }
 
 @kotlin.internal.InlineOnly
-inline operator fun StyleSheetList.get(index: Int): StyleSheet? = asDynamic()[index]
-
-/**
- * Exposes the JavaScript [LinkStyle](https://developer.mozilla.org/en/docs/Web/API/LinkStyle) to Kotlin
- */
-external interface LinkStyle {
-    val sheet: StyleSheet?
-        get() = definedExternally
-}
+inline operator fun StyleSheetList.get(index: Int): CSSStyleSheet? = asDynamic()[index]
 
 /**
  * Exposes the JavaScript [CSSRuleList](https://developer.mozilla.org/en/docs/Web/API/CSSRuleList) to Kotlin
  */
 external abstract class CSSRuleList : ItemArrayLike<CSSRule> {
-    override val length: Int
     override fun item(index: Int): CSSRule?
 }
 
@@ -94,10 +87,10 @@ inline operator fun CSSRuleList.get(index: Int): CSSRule? = asDynamic()[index]
  * Exposes the JavaScript [CSSRule](https://developer.mozilla.org/en/docs/Web/API/CSSRule) to Kotlin
  */
 external abstract class CSSRule {
-    open val type: Short
-    open var cssText: String
+    open var cssText: dynamic
     open val parentRule: CSSRule?
     open val parentStyleSheet: CSSStyleSheet?
+    open val type: Short
 
     companion object {
         val STYLE_RULE: Short
@@ -115,7 +108,7 @@ external abstract class CSSRule {
  * Exposes the JavaScript [CSSStyleRule](https://developer.mozilla.org/en/docs/Web/API/CSSStyleRule) to Kotlin
  */
 external abstract class CSSStyleRule : CSSRule {
-    open var selectorText: String
+    open var selectorText: dynamic
     open val style: CSSStyleDeclaration
 
     companion object {
@@ -152,26 +145,8 @@ external abstract class CSSImportRule : CSSRule {
  */
 external abstract class CSSGroupingRule : CSSRule {
     open val cssRules: CSSRuleList
-    fun insertRule(rule: String, index: Int): Int
+    fun insertRule(rule: dynamic, index: Int = definedExternally): Int
     fun deleteRule(index: Int)
-
-    companion object {
-        val STYLE_RULE: Short
-        val CHARSET_RULE: Short
-        val IMPORT_RULE: Short
-        val MEDIA_RULE: Short
-        val FONT_FACE_RULE: Short
-        val PAGE_RULE: Short
-        val MARGIN_RULE: Short
-        val NAMESPACE_RULE: Short
-    }
-}
-
-/**
- * Exposes the JavaScript [CSSMediaRule](https://developer.mozilla.org/en/docs/Web/API/CSSMediaRule) to Kotlin
- */
-external abstract class CSSMediaRule : CSSGroupingRule {
-    open val media: MediaList
 
     companion object {
         val STYLE_RULE: Short
@@ -189,7 +164,7 @@ external abstract class CSSMediaRule : CSSGroupingRule {
  * Exposes the JavaScript [CSSPageRule](https://developer.mozilla.org/en/docs/Web/API/CSSPageRule) to Kotlin
  */
 external abstract class CSSPageRule : CSSGroupingRule {
-    open var selectorText: String
+    open var selectorText: dynamic
     open val style: CSSStyleDeclaration
 
     companion object {
@@ -205,7 +180,7 @@ external abstract class CSSPageRule : CSSGroupingRule {
 }
 
 external abstract class CSSMarginRule : CSSRule {
-    open val name: String
+    open val name: dynamic
     open val style: CSSStyleDeclaration
 
     companion object {
@@ -224,8 +199,8 @@ external abstract class CSSMarginRule : CSSRule {
  * Exposes the JavaScript [CSSNamespaceRule](https://developer.mozilla.org/en/docs/Web/API/CSSNamespaceRule) to Kotlin
  */
 external abstract class CSSNamespaceRule : CSSRule {
-    open val namespaceURI: String
-    open val prefix: String
+    open val namespaceURI: dynamic
+    open val prefix: dynamic
 
     companion object {
         val STYLE_RULE: Short
@@ -242,11 +217,10 @@ external abstract class CSSNamespaceRule : CSSRule {
 /**
  * Exposes the JavaScript [CSSStyleDeclaration](https://developer.mozilla.org/en/docs/Web/API/CSSStyleDeclaration) to Kotlin
  */
-external abstract class CSSStyleDeclaration : ItemArrayLike<String> {
-    open var cssText: String
-    override val length: Int
+external abstract class CSSStyleDeclaration : ItemArrayLike<CSSOMString> {
+    open var cssText: dynamic
     open val parentRule: CSSRule?
-    open var cssFloat: String
+    open var cssFloat: dynamic
     open var alignContent: String
     open var alignItems: String
     open var alignSelf: String
@@ -470,32 +444,22 @@ external abstract class CSSStyleDeclaration : ItemArrayLike<String> {
     open var wordWrap: String
     open var writingMode: String
     open var zIndex: String
-    open var _dashed_attribute: String
-    open var _camel_cased_attribute: String
-    open var _webkit_cased_attribute: String
-    fun getPropertyValue(property: String): String
-    fun getPropertyPriority(property: String): String
-    fun setProperty(property: String, value: String, priority: String = definedExternally)
-    fun setPropertyValue(property: String, value: String)
-    fun setPropertyPriority(property: String, priority: String)
-    fun removeProperty(property: String): String
-    override fun item(index: Int): String
+    fun getPropertyValue(property: dynamic): dynamic
+    fun getPropertyPriority(property: dynamic): dynamic
+    fun setProperty(property: dynamic, value: dynamic, priority: dynamic = definedExternally)
+    fun removeProperty(property: dynamic): dynamic
+    override fun item(index: Int): dynamic
 }
 
 @kotlin.internal.InlineOnly
-inline operator fun CSSStyleDeclaration.get(index: Int): String? = asDynamic()[index]
+inline operator fun CSSStyleDeclaration.get(index: Int): dynamic = asDynamic()[index]
 
-external interface ElementCSSInlineStyle {
-    val style: CSSStyleDeclaration
+external object CSS {
+    fun escape(ident: CSSOMString): CSSOMString
 }
 
-/**
- * Exposes the JavaScript [CSS](https://developer.mozilla.org/en/docs/Web/API/CSS) to Kotlin
- */
-external abstract class CSS {
-    companion object {
-        fun escape(ident: String): String
-    }
+external object CSS {
+    fun escape(ident: CSSOMString): CSSOMString
 }
 
 external interface UnionElementOrProcessingInstruction

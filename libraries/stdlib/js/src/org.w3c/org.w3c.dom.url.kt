@@ -21,6 +21,7 @@ import org.w3c.dom.pointerevents.*
 import org.w3c.dom.svg.*
 import org.w3c.fetch.*
 import org.w3c.files.*
+import org.w3c.fullscreen.*
 import org.w3c.notifications.*
 import org.w3c.performance.*
 import org.w3c.workers.*
@@ -42,12 +43,10 @@ external open class URL(url: String, base: String = definedExternally) {
     var search: String
     open val searchParams: URLSearchParams
     var hash: String
+    fun toJSON(): String
 
     companion object {
-        fun domainToASCII(domain: String): String
-        fun domainToUnicode(domain: String): String
-        fun createObjectURL(blob: Blob): String
-        fun createFor(blob: Blob): String
+        fun createObjectURL(obj: dynamic): String
         fun revokeObjectURL(url: String)
     }
 }
@@ -62,4 +61,5 @@ external open class URLSearchParams(init: dynamic = definedExternally) {
     fun getAll(name: String): Array<String>
     fun has(name: String): Boolean
     fun set(name: String, value: String)
+    fun sort()
 }
