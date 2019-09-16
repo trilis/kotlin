@@ -2882,58 +2882,43 @@ Document includes XPathEvaluatorBase;
 interface XPathEvaluator {};
 
 XPathEvaluator includes XPathEvaluatorBase;
-// Downloaded from https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html
-interface Selection {
-  readonly attribute Node? anchorNode;
-  readonly attribute unsigned long anchorOffset;
-  readonly attribute Node? focusNode;
-  readonly attribute unsigned long focusOffset;
-
-  readonly attribute boolean isCollapsed;
-  void               collapse(Node node, unsigned long offset);
-  void               collapseToStart();
-  void               collapseToEnd();
-
-  void               extend(Node node, unsigned long offset);
-
-  void               selectAllChildren(Node node);
-  void               deleteFromDocument();
-
-  readonly attribute unsigned long rangeCount;
-  Range              getRangeAt(unsigned long index);
-  void               addRange(Range range);
-  void               removeRange(Range range);
-  void               removeAllRanges();
-
-  stringifier;
-};
+// Downloaded from https://w3c.github.io/selection-api/
+[Exposed=Window]
+        interface Selection {
+          readonly attribute Node? anchorNode;
+          readonly attribute unsigned long anchorOffset;
+          readonly attribute Node? focusNode;
+          readonly attribute unsigned long focusOffset;
+          readonly attribute boolean isCollapsed;
+          readonly attribute unsigned long rangeCount;
+          readonly attribute DOMString type;
+          Range getRangeAt(unsigned long index);
+          void addRange(Range range);
+          void removeRange(Range range);
+          void removeAllRanges();
+          void empty();
+          void collapse(Node? node, optional unsigned long offset = 0);
+          void setPosition(Node? node, optional unsigned long offset = 0);
+          void collapseToStart();
+          void collapseToEnd();
+          void extend(Node node, optional unsigned long offset = 0);
+          void setBaseAndExtent(Node anchorNode, unsigned long anchorOffset, Node focusNode, unsigned long focusOffset);
+          void selectAllChildren(Node node);
+          [CEReactions]
+          void deleteFromDocument();
+          boolean containsNode(Node node, optional boolean allowPartialContainment = false);
+          stringifier DOMString ();
+        };
 partial interface Document {
-  Selection getSelection();
-};
+            Selection? getSelection();
+          };
 partial interface Window {
-  Selection getSelection();
-};
-[Constructor(DOMString type, optional EditingBeforeInputEventInit eventInitDict)]
-interface EditingBeforeInputEvent : Event {
-  readonly attribute DOMString command;
-  readonly attribute DOMString value;
-};
-
-dictionary EditingBeforeInputEventInit : EventInit {
-  DOMString command;
-  DOMString value;
-};
-
-[Constructor(DOMString type, optional EditingInputEventInit eventInitDict)]
-interface EditingInputEvent : Event {
-  readonly attribute DOMString command;
-  readonly attribute DOMString value;
-};
-
-dictionary EditingInputEventInit : EventInit {
-  DOMString command;
-  DOMString value;
-};
+            Selection? getSelection();
+          };
+partial interface mixin GlobalEventHandlers {
+            attribute EventHandler onselectstart;
+            attribute EventHandler onselectionchange;
+          };
 // Downloaded from https://www.w3.org/TR/geometry-1/
 [Constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,
              optional unrestricted double z = 0, optional unrestricted double w = 1),

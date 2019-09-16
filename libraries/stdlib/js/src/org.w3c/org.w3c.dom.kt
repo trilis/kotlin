@@ -154,6 +154,8 @@ external open class HTMLElement : Element {
     var ontoggle: ((Event) -> dynamic)?
     var onvolumechange: ((Event) -> dynamic)?
     var onwaiting: ((Event) -> dynamic)?
+    var onselectstart: ((Event) -> dynamic)?
+    var onselectionchange: ((Event) -> dynamic)?
     var ongotpointercapture: ((PointerEvent) -> dynamic)?
     var onlostpointercapture: ((PointerEvent) -> dynamic)?
     var onpointerdown: ((PointerEvent) -> dynamic)?
@@ -3327,6 +3329,8 @@ external open class Window : EventTarget, MessageEventSource {
     var ontoggle: ((Event) -> dynamic)?
     var onvolumechange: ((Event) -> dynamic)?
     var onwaiting: ((Event) -> dynamic)?
+    var onselectstart: ((Event) -> dynamic)?
+    var onselectionchange: ((Event) -> dynamic)?
     var ongotpointercapture: ((PointerEvent) -> dynamic)?
     var onlostpointercapture: ((PointerEvent) -> dynamic)?
     var onpointerdown: ((PointerEvent) -> dynamic)?
@@ -3372,7 +3376,7 @@ external open class Window : EventTarget, MessageEventSource {
     fun postMessage(message: Any?, options: WindowPostMessageOptions = definedExternally)
     fun captureEvents()
     fun releaseEvents()
-    fun getSelection(): Selection
+    fun getSelection(): Selection?
     fun matchMedia(query: String): MediaQueryList
     fun moveTo(x: Int, y: Int)
     fun moveBy(x: Int, y: Int)
@@ -4737,6 +4741,8 @@ external open class Document : Node, GeometryUtils {
     var ontoggle: ((Event) -> dynamic)?
     var onvolumechange: ((Event) -> dynamic)?
     var onwaiting: ((Event) -> dynamic)?
+    var onselectstart: ((Event) -> dynamic)?
+    var onselectionchange: ((Event) -> dynamic)?
     var ongotpointercapture: ((PointerEvent) -> dynamic)?
     var onlostpointercapture: ((PointerEvent) -> dynamic)?
     var onpointerdown: ((PointerEvent) -> dynamic)?
@@ -4793,7 +4799,7 @@ external open class Document : Node, GeometryUtils {
     fun clear()
     fun captureEvents()
     fun releaseEvents()
-    fun getSelection(): Selection
+    fun getSelection(): Selection?
     fun elementFromPoint(x: Double, y: Double): Element?
     fun elementsFromPoint(x: Double, y: Double): Array<Element>
     fun caretPositionFromPoint(x: Double, y: Double): CaretPosition?
@@ -5513,80 +5519,21 @@ external abstract class Selection {
     open val focusOffset: Int
     open val isCollapsed: Boolean
     open val rangeCount: Int
-    fun collapse(node: Node, offset: Int)
-    fun collapseToStart()
-    fun collapseToEnd()
-    fun extend(node: Node, offset: Int)
-    fun selectAllChildren(node: Node)
-    fun deleteFromDocument()
+    open val type: String
     fun getRangeAt(index: Int): Range
     fun addRange(range: Range)
     fun removeRange(range: Range)
     fun removeAllRanges()
-}
-
-external open class EditingBeforeInputEvent(type: String, eventInitDict: EditingBeforeInputEventInit = definedExternally) : Event {
-    open val command: String
-    open val value: String
-
-    companion object {
-        val NONE: Short
-        val CAPTURING_PHASE: Short
-        val AT_TARGET: Short
-        val BUBBLING_PHASE: Short
-    }
-}
-
-external interface EditingBeforeInputEventInit : EventInit {
-    var command: String?
-        get() = definedExternally
-        set(value) = definedExternally
-    var value: String?
-        get() = definedExternally
-        set(value) = definedExternally
-}
-
-@kotlin.internal.InlineOnly
-inline fun EditingBeforeInputEventInit(command: String? = undefined, value: String? = undefined, bubbles: Boolean? = false, cancelable: Boolean? = false, composed: Boolean? = false): EditingBeforeInputEventInit {
-    val o = js("({})")
-    o["command"] = command
-    o["value"] = value
-    o["bubbles"] = bubbles
-    o["cancelable"] = cancelable
-    o["composed"] = composed
-    return o
-}
-
-external open class EditingInputEvent(type: String, eventInitDict: EditingInputEventInit = definedExternally) : Event {
-    open val command: String
-    open val value: String
-
-    companion object {
-        val NONE: Short
-        val CAPTURING_PHASE: Short
-        val AT_TARGET: Short
-        val BUBBLING_PHASE: Short
-    }
-}
-
-external interface EditingInputEventInit : EventInit {
-    var command: String?
-        get() = definedExternally
-        set(value) = definedExternally
-    var value: String?
-        get() = definedExternally
-        set(value) = definedExternally
-}
-
-@kotlin.internal.InlineOnly
-inline fun EditingInputEventInit(command: String? = undefined, value: String? = undefined, bubbles: Boolean? = false, cancelable: Boolean? = false, composed: Boolean? = false): EditingInputEventInit {
-    val o = js("({})")
-    o["command"] = command
-    o["value"] = value
-    o["bubbles"] = bubbles
-    o["cancelable"] = cancelable
-    o["composed"] = composed
-    return o
+    fun empty()
+    fun collapse(node: Node?, offset: Int = definedExternally)
+    fun setPosition(node: Node?, offset: Int = definedExternally)
+    fun collapseToStart()
+    fun collapseToEnd()
+    fun extend(node: Node, offset: Int = definedExternally)
+    fun setBaseAndExtent(anchorNode: Node, anchorOffset: Int, focusNode: Node, focusOffset: Int)
+    fun selectAllChildren(node: Node)
+    fun deleteFromDocument()
+    fun containsNode(node: Node, allowPartialContainment: Boolean = definedExternally): Boolean
 }
 
 /**

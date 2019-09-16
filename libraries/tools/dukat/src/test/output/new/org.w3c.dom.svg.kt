@@ -307,6 +307,12 @@ public open external class SVGAElement : org.w3c.dom.svg.SVGGraphicsElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -1018,6 +1024,12 @@ public open external class SVGCircleElement : org.w3c.dom.svg.SVGGeometryElement
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -1501,6 +1513,12 @@ public open external class SVGDefsElement : org.w3c.dom.svg.SVGGraphicsElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -1976,6 +1994,12 @@ public open external class SVGDescElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -2440,6 +2464,12 @@ public open external class SVGElement : org.w3c.dom.Element {
     public final var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -2908,6 +2938,12 @@ public open external class SVGEllipseElement : org.w3c.dom.svg.SVGGeometryElemen
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -3395,6 +3431,12 @@ public open external class SVGForeignObjectElement : org.w3c.dom.svg.SVGGraphics
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -3876,6 +3918,12 @@ public open external class SVGGElement : org.w3c.dom.svg.SVGGraphicsElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -4351,6 +4399,12 @@ public open external class SVGGeometryElement : org.w3c.dom.svg.SVGGraphicsEleme
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -4839,6 +4893,12 @@ public open external class SVGGradientElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -5313,6 +5373,12 @@ public open external class SVGGraphicsElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -5796,6 +5862,12 @@ public open external class SVGImageElement : org.w3c.dom.svg.SVGGraphicsElement,
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -6346,6 +6418,12 @@ public open external class SVGLineElement : org.w3c.dom.svg.SVGGeometryElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -6842,6 +6920,12 @@ public open external class SVGLinearGradientElement : org.w3c.dom.svg.SVGGradien
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -7330,6 +7414,12 @@ public open external class SVGMarkerElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -7825,6 +7915,12 @@ public open external class SVGMetadataElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -8317,6 +8413,12 @@ public open external class SVGPathElement : org.w3c.dom.svg.SVGGeometryElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -8803,6 +8905,12 @@ public open external class SVGPatternElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -9306,6 +9414,12 @@ public open external class SVGPolygonElement : org.w3c.dom.svg.SVGGeometryElemen
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -9793,6 +9907,12 @@ public open external class SVGPolylineElement : org.w3c.dom.svg.SVGGeometryEleme
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -10342,6 +10462,12 @@ public open external class SVGRadialGradientElement : org.w3c.dom.svg.SVGGradien
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -10820,6 +10946,12 @@ public open external class SVGRectElement : org.w3c.dom.svg.SVGGeometryElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -11357,6 +11489,12 @@ public open external class SVGSVGElement : org.w3c.dom.svg.SVGGraphicsElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -11886,6 +12024,12 @@ public open external class SVGScriptElement : org.w3c.dom.svg.SVGElement, org.w3
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -12355,6 +12499,12 @@ public open external class SVGStopElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -12840,6 +12990,12 @@ public open external class SVGStyleElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -13313,6 +13469,12 @@ public open external class SVGSwitchElement : org.w3c.dom.svg.SVGGraphicsElement
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -13788,6 +13950,12 @@ public open external class SVGSymbolElement : org.w3c.dom.svg.SVGGraphicsElement
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -14275,6 +14443,12 @@ public open external class SVGTSpanElement : org.w3c.dom.svg.SVGTextPositioningE
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -14775,6 +14949,12 @@ public open external class SVGTextContentElement : org.w3c.dom.svg.SVGGraphicsEl
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -15273,6 +15453,12 @@ public open external class SVGTextElement : org.w3c.dom.svg.SVGTextPositioningEl
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -15778,6 +15964,12 @@ public open external class SVGTextPathElement : org.w3c.dom.svg.SVGTextContentEl
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -16292,6 +16484,12 @@ public open external class SVGTextPositioningElement : org.w3c.dom.svg.SVGTextCo
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -16790,6 +16988,12 @@ public open external class SVGTitleElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -17334,6 +17538,12 @@ public open external class SVGUnknownElement : org.w3c.dom.svg.SVGGraphicsElemen
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -17818,6 +18028,12 @@ public open external class SVGUseElement : org.w3c.dom.svg.SVGGraphicsElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
@@ -18418,6 +18634,12 @@ public open external class SVGViewElement : org.w3c.dom.svg.SVGElement {
     public final override /*1*/ /*fake_override*/ var onselect: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onselect>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onselect>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectionchange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectionchange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectionchange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onselectstart: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onselectstart>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onselectstart>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ var onstalled: ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <get-onstalled>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final override /*1*/ /*fake_override*/ fun <set-onstalled>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit

@@ -96,6 +96,8 @@ external open class SVGElement : Element {
     var ontoggle: ((Event) -> dynamic)?
     var onvolumechange: ((Event) -> dynamic)?
     var onwaiting: ((Event) -> dynamic)?
+    var onselectstart: ((Event) -> dynamic)?
+    var onselectionchange: ((Event) -> dynamic)?
     var ongotpointercapture: ((PointerEvent) -> dynamic)?
     var onlostpointercapture: ((PointerEvent) -> dynamic)?
     var onpointerdown: ((PointerEvent) -> dynamic)?
