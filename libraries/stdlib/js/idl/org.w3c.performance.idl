@@ -8,7 +8,7 @@ interface Performance : EventTarget { DOMHighResTimeStamp now (); readonly attri
 };
 partial interface mixin WindowOrWorkerGlobalScope { [Replaceable] readonly attribute Performance performance;
 };
-// Downloaded from https://www.w3.org/TR/2012/REC-navigation-timing-20121217/
+// Downloaded from https://www.w3.org/TR/navigation-timing/
 interface PerformanceTiming {
   readonly attribute unsigned long long navigationStart;
   readonly attribute unsigned long long unloadEventStart;

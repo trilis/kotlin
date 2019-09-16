@@ -128,7 +128,7 @@ private val urls = listOf(
     "https://www.w3.org/TR/vibration/" to "org.w3c.vibration",
 
     "https://www.w3.org/TR/hr-time/" to "org.w3c.performance",
-    "https://www.w3.org/TR/2012/REC-navigation-timing-20121217/" to "org.w3c.performance",
+    "https://www.w3.org/TR/navigation-timing/" to "org.w3c.performance",
 
     "https://w3c.github.io/ServiceWorker/" to "org.w3c.workers"
 )
