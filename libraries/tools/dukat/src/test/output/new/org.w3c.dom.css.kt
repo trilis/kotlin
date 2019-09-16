@@ -1,32 +1,33 @@
 package org.w3c.dom.css
 
 @kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.CSSRuleList.get(/*0*/ index: kotlin.Int): org.w3c.dom.css.CSSRule?
-@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.CSSStyleDeclaration.get(/*0*/ index: kotlin.Int): kotlin.String?
-@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.MediaList.get(/*0*/ index: kotlin.Int): kotlin.String?
-@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.StyleSheetList.get(/*0*/ index: kotlin.Int): org.w3c.dom.css.StyleSheet?
+@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.CSSStyleDeclaration.get(/*0*/ index: kotlin.Int): dynamic
+@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.MediaList.get(/*0*/ index: kotlin.Int): dynamic
+@kotlin.internal.InlineOnly public inline operator fun org.w3c.dom.css.StyleSheetList.get(/*0*/ index: kotlin.Int): org.w3c.dom.css.CSSStyleSheet?
 
-public abstract external class CSS {
-    /*primary*/ public constructor CSS()
+public external object CSS {
+    /*primary*/ private constructor CSS()
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public final fun escape(/*0*/ ident: [ERROR : CSSOMString]): [ERROR : CSSOMString]
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+}
 
-    public companion object Companion {
-        /*primary*/ private constructor Companion()
-        public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-        public final fun escape(/*0*/ ident: kotlin.String): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-        public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-    }
+public external object CSS {
+    /*primary*/ private constructor CSS()
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public final fun escape(/*0*/ ident: [ERROR : CSSOMString]): [ERROR : CSSOMString]
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
 public abstract external class CSSGroupingRule : org.w3c.dom.css.CSSRule {
     /*primary*/ public constructor CSSGroupingRule()
     public open val cssRules: org.w3c.dom.css.CSSRuleList
         public open fun <get-cssRules>(): org.w3c.dom.css.CSSRuleList
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
         public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
@@ -36,10 +37,9 @@ public abstract external class CSSGroupingRule : org.w3c.dom.css.CSSRule {
     public final fun deleteRule(/*0*/ index: kotlin.Int): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final fun insertRule(/*0*/ rule: kotlin.String, /*1*/ index: kotlin.Int): kotlin.Int
+    public final fun insertRule(/*0*/ rule: dynamic, /*1*/ index: kotlin.Int = ...): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -66,9 +66,9 @@ public abstract external class CSSGroupingRule : org.w3c.dom.css.CSSRule {
 
 public abstract external class CSSImportRule : org.w3c.dom.css.CSSRule {
     /*primary*/ public constructor CSSImportRule()
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open val href: kotlin.String
         public open fun <get-href>(): kotlin.String
     public open val media: org.w3c.dom.css.MediaList
@@ -85,7 +85,6 @@ public abstract external class CSSImportRule : org.w3c.dom.css.CSSRule {
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -112,11 +111,11 @@ public abstract external class CSSImportRule : org.w3c.dom.css.CSSRule {
 
 public abstract external class CSSMarginRule : org.w3c.dom.css.CSSRule {
     /*primary*/ public constructor CSSMarginRule()
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open val name: kotlin.String
-        public open fun <get-name>(): kotlin.String
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
+    public open val name: dynamic
+        public open fun <get-name>(): dynamic
     public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
         public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
@@ -129,53 +128,6 @@ public abstract external class CSSMarginRule : org.w3c.dom.css.CSSRule {
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
-    public companion object Companion {
-        /*primary*/ private constructor Companion()
-        public final val CHARSET_RULE: kotlin.Short
-            public final fun <get-CHARSET_RULE>(): kotlin.Short
-        public final val FONT_FACE_RULE: kotlin.Short
-            public final fun <get-FONT_FACE_RULE>(): kotlin.Short
-        public final val IMPORT_RULE: kotlin.Short
-            public final fun <get-IMPORT_RULE>(): kotlin.Short
-        public final val MARGIN_RULE: kotlin.Short
-            public final fun <get-MARGIN_RULE>(): kotlin.Short
-        public final val MEDIA_RULE: kotlin.Short
-            public final fun <get-MEDIA_RULE>(): kotlin.Short
-        public final val NAMESPACE_RULE: kotlin.Short
-            public final fun <get-NAMESPACE_RULE>(): kotlin.Short
-        public final val PAGE_RULE: kotlin.Short
-            public final fun <get-PAGE_RULE>(): kotlin.Short
-        public final val STYLE_RULE: kotlin.Short
-            public final fun <get-STYLE_RULE>(): kotlin.Short
-        public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-        public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-    }
-}
-
-public abstract external class CSSMediaRule : org.w3c.dom.css.CSSGroupingRule {
-    /*primary*/ public constructor CSSMediaRule()
-    public open override /*1*/ /*fake_override*/ val cssRules: org.w3c.dom.css.CSSRuleList
-        public open override /*1*/ /*fake_override*/ fun <get-cssRules>(): org.w3c.dom.css.CSSRuleList
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open val media: org.w3c.dom.css.MediaList
-        public open fun <get-media>(): org.w3c.dom.css.MediaList
-    public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
-        public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
-    public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
-        public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
-    public open override /*1*/ /*fake_override*/ val type: kotlin.Short
-        public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.Short
-    public final override /*1*/ /*fake_override*/ fun deleteRule(/*0*/ index: kotlin.Int): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun insertRule(/*0*/ rule: kotlin.String, /*1*/ index: kotlin.Int): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -202,24 +154,23 @@ public abstract external class CSSMediaRule : org.w3c.dom.css.CSSGroupingRule {
 
 public abstract external class CSSNamespaceRule : org.w3c.dom.css.CSSRule {
     /*primary*/ public constructor CSSNamespaceRule()
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open val namespaceURI: kotlin.String
-        public open fun <get-namespaceURI>(): kotlin.String
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
+    public open val namespaceURI: dynamic
+        public open fun <get-namespaceURI>(): dynamic
     public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
         public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
         public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
-    public open val prefix: kotlin.String
-        public open fun <get-prefix>(): kotlin.String
+    public open val prefix: dynamic
+        public open fun <get-prefix>(): dynamic
     public open override /*1*/ /*fake_override*/ val type: kotlin.Short
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.Short
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -248,16 +199,16 @@ public abstract external class CSSPageRule : org.w3c.dom.css.CSSGroupingRule {
     /*primary*/ public constructor CSSPageRule()
     public open override /*1*/ /*fake_override*/ val cssRules: org.w3c.dom.css.CSSRuleList
         public open override /*1*/ /*fake_override*/ fun <get-cssRules>(): org.w3c.dom.css.CSSRuleList
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
         public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
         public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
-    public open var selectorText: kotlin.String
-        public open fun <get-selectorText>(): kotlin.String
-        public open fun <set-selectorText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open var selectorText: dynamic
+        public open fun <get-selectorText>(): dynamic
+        public open fun <set-selectorText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open val style: org.w3c.dom.css.CSSStyleDeclaration
         public open fun <get-style>(): org.w3c.dom.css.CSSStyleDeclaration
     public open override /*1*/ /*fake_override*/ val type: kotlin.Short
@@ -265,10 +216,9 @@ public abstract external class CSSPageRule : org.w3c.dom.css.CSSGroupingRule {
     public final override /*1*/ /*fake_override*/ fun deleteRule(/*0*/ index: kotlin.Int): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun insertRule(/*0*/ rule: kotlin.String, /*1*/ index: kotlin.Int): kotlin.Int
+    public final override /*1*/ /*fake_override*/ fun insertRule(/*0*/ rule: dynamic, /*1*/ index: kotlin.Int = ...): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -295,9 +245,9 @@ public abstract external class CSSPageRule : org.w3c.dom.css.CSSGroupingRule {
 
 public abstract external class CSSRule {
     /*primary*/ public constructor CSSRule()
-    public open var cssText: kotlin.String
-        public open fun <get-cssText>(): kotlin.String
-        public open fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open var cssText: dynamic
+        public open fun <get-cssText>(): dynamic
+        public open fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open val parentRule: org.w3c.dom.css.CSSRule?
         public open fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
@@ -334,7 +284,6 @@ public abstract external class CSSRule {
 
 public abstract external class CSSRuleList : org.w3c.dom.ItemArrayLike<org.w3c.dom.css.CSSRule> {
     /*primary*/ public constructor CSSRuleList()
-    // we can omit explicit override here
     public abstract override /*1*/ /*fake_override*/ val length: kotlin.Int
         public abstract override /*1*/ /*fake_override*/ fun <get-length>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
@@ -343,17 +292,8 @@ public abstract external class CSSRuleList : org.w3c.dom.ItemArrayLike<org.w3c.d
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public abstract external class CSSStyleDeclaration : org.w3c.dom.ItemArrayLike<kotlin.String> {
+public abstract external class CSSStyleDeclaration : org.w3c.dom.ItemArrayLike<[ERROR : CSSOMString]> {
     /*primary*/ public constructor CSSStyleDeclaration()
-    public open var _camel_cased_attribute: kotlin.String
-        public open fun <get-_camel_cased_attribute>(): kotlin.String
-        public open fun <set-_camel_cased_attribute>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open var _dashed_attribute: kotlin.String
-        public open fun <get-_dashed_attribute>(): kotlin.String
-        public open fun <set-_dashed_attribute>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open var _webkit_cased_attribute: kotlin.String
-        public open fun <get-_webkit_cased_attribute>(): kotlin.String
-        public open fun <set-_webkit_cased_attribute>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
     public open var alignContent: kotlin.String
         public open fun <get-alignContent>(): kotlin.String
         public open fun <set-alignContent>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
@@ -591,12 +531,12 @@ public abstract external class CSSStyleDeclaration : org.w3c.dom.ItemArrayLike<k
     public open var counterReset: kotlin.String
         public open fun <get-counterReset>(): kotlin.String
         public open fun <set-counterReset>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open var cssFloat: kotlin.String
-        public open fun <get-cssFloat>(): kotlin.String
-        public open fun <set-cssFloat>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public open var cssText: kotlin.String
-        public open fun <get-cssText>(): kotlin.String
-        public open fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open var cssFloat: dynamic
+        public open fun <get-cssFloat>(): dynamic
+        public open fun <set-cssFloat>(/*0*/ <set-?>: dynamic): kotlin.Unit
+    public open var cssText: dynamic
+        public open fun <get-cssText>(): dynamic
+        public open fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open var cursor: kotlin.String
         public open fun <get-cursor>(): kotlin.String
         public open fun <set-cursor>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
@@ -714,7 +654,6 @@ public abstract external class CSSStyleDeclaration : org.w3c.dom.ItemArrayLike<k
     public open var left: kotlin.String
         public open fun <get-left>(): kotlin.String
         public open fun <set-left>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    // we can omit explicit override here
     public abstract override /*1*/ /*fake_override*/ val length: kotlin.Int
         public abstract override /*1*/ /*fake_override*/ fun <get-length>(): kotlin.Int
     public open var letterSpacing: kotlin.String
@@ -1035,29 +974,27 @@ public abstract external class CSSStyleDeclaration : org.w3c.dom.ItemArrayLike<k
         public open fun <get-zIndex>(): kotlin.String
         public open fun <set-zIndex>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public final fun getPropertyPriority(/*0*/ property: kotlin.String): kotlin.String
-    public final fun getPropertyValue(/*0*/ property: kotlin.String): kotlin.String
+    public final fun getPropertyPriority(/*0*/ property: dynamic): dynamic
+    public final fun getPropertyValue(/*0*/ property: dynamic): dynamic
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): kotlin.String
-    public final fun removeProperty(/*0*/ property: kotlin.String): kotlin.String
-    public final fun setProperty(/*0*/ property: kotlin.String, /*1*/ value: kotlin.String, /*2*/ priority: kotlin.String = ...): kotlin.Unit
-    public final fun setPropertyPriority(/*0*/ property: kotlin.String, /*1*/ priority: kotlin.String): kotlin.Unit
-    public final fun setPropertyValue(/*0*/ property: kotlin.String, /*1*/ value: kotlin.String): kotlin.Unit
+    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): dynamic
+    public final fun removeProperty(/*0*/ property: dynamic): dynamic
+    public final fun setProperty(/*0*/ property: dynamic, /*1*/ value: dynamic, /*2*/ priority: dynamic = ...): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
 public abstract external class CSSStyleRule : org.w3c.dom.css.CSSRule {
     /*primary*/ public constructor CSSStyleRule()
-    public open override /*1*/ /*fake_override*/ var cssText: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ var cssText: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-cssText>(): dynamic
+        public open override /*1*/ /*fake_override*/ fun <set-cssText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val parentRule: org.w3c.dom.css.CSSRule?
         public open override /*1*/ /*fake_override*/ fun <get-parentRule>(): org.w3c.dom.css.CSSRule?
     public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
         public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
-    public open var selectorText: kotlin.String
-        public open fun <get-selectorText>(): kotlin.String
-        public open fun <set-selectorText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
+    public open var selectorText: dynamic
+        public open fun <get-selectorText>(): dynamic
+        public open fun <set-selectorText>(/*0*/ <set-?>: dynamic): kotlin.Unit
     public open val style: org.w3c.dom.css.CSSStyleDeclaration
         public open fun <get-style>(): org.w3c.dom.css.CSSStyleDeclaration
     public open override /*1*/ /*fake_override*/ val type: kotlin.Short
@@ -1066,7 +1003,6 @@ public abstract external class CSSStyleRule : org.w3c.dom.css.CSSRule {
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val CHARSET_RULE: kotlin.Short
@@ -1106,49 +1042,35 @@ public abstract external class CSSStyleSheet : org.w3c.dom.css.StyleSheet {
         public open override /*1*/ /*fake_override*/ fun <get-ownerNode>(): org.w3c.dom.css.UnionElementOrProcessingInstruction?
     public open val ownerRule: org.w3c.dom.css.CSSRule?
         public open fun <get-ownerRule>(): org.w3c.dom.css.CSSRule?
-    public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.StyleSheet?
-        public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.StyleSheet?
+    public open override /*1*/ /*fake_override*/ val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
+        public open override /*1*/ /*fake_override*/ fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
+    public open val rules: org.w3c.dom.css.CSSRuleList
+        public open fun <get-rules>(): org.w3c.dom.css.CSSRuleList
     public open override /*1*/ /*fake_override*/ val title: kotlin.String?
         public open override /*1*/ /*fake_override*/ fun <get-title>(): kotlin.String?
-    public open override /*1*/ /*fake_override*/ val type: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
+    public open override /*1*/ /*fake_override*/ val type: dynamic
+        public open override /*1*/ /*fake_override*/ fun <get-type>(): dynamic
+    public final fun addRule(/*0*/ selector: kotlin.String = ..., /*1*/ style: kotlin.String = ..., /*2*/ index: kotlin.Int = ...): kotlin.Int
     public final fun deleteRule(/*0*/ index: kotlin.Int): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final fun insertRule(/*0*/ rule: kotlin.String, /*1*/ index: kotlin.Int): kotlin.Int
+    public final fun insertRule(/*0*/ rule: dynamic, /*1*/ index: kotlin.Int = ...): kotlin.Int
+    public final fun removeRule(/*0*/ index: kotlin.Int = ...): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public external interface ElementCSSInlineStyle {
-    public abstract val style: org.w3c.dom.css.CSSStyleDeclaration
-        public abstract fun <get-style>(): org.w3c.dom.css.CSSStyleDeclaration
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-}
-
-public external interface LinkStyle {
-    // we add get() = definedExternally here to allow users to inherit without overriding [9]
-    public open val sheet: org.w3c.dom.css.StyleSheet?
-        public open fun <get-sheet>(): org.w3c.dom.css.StyleSheet?
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-}
-
-public abstract external class MediaList : org.w3c.dom.ItemArrayLike<kotlin.String> {
+public abstract external class MediaList : org.w3c.dom.ItemArrayLike<[ERROR : CSSOMString]> {
     /*primary*/ public constructor MediaList()
-    // we can omit explicit override here
     public abstract override /*1*/ /*fake_override*/ val length: kotlin.Int
         public abstract override /*1*/ /*fake_override*/ fun <get-length>(): kotlin.Int
-    public open var mediaText: kotlin.String
-        public open fun <get-mediaText>(): kotlin.String
-        public open fun <set-mediaText>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
-    public final fun appendMedium(/*0*/ medium: kotlin.String): kotlin.Unit
-    public final fun deleteMedium(/*0*/ medium: kotlin.String): kotlin.Unit
+    public open var mediaText: dynamic
+        public open fun <get-mediaText>(): dynamic
+        public open fun <set-mediaText>(/*0*/ <set-?>: dynamic): kotlin.Unit
+    public final fun appendMedium(/*0*/ medium: dynamic): kotlin.Unit
+    public final fun deleteMedium(/*0*/ medium: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): kotlin.String?
+    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): dynamic
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
@@ -1163,30 +1085,27 @@ public abstract external class StyleSheet {
         public open fun <get-media>(): org.w3c.dom.css.MediaList
     public open val ownerNode: org.w3c.dom.css.UnionElementOrProcessingInstruction?
         public open fun <get-ownerNode>(): org.w3c.dom.css.UnionElementOrProcessingInstruction?
-    public open val parentStyleSheet: org.w3c.dom.css.StyleSheet?
-        public open fun <get-parentStyleSheet>(): org.w3c.dom.css.StyleSheet?
+    public open val parentStyleSheet: org.w3c.dom.css.CSSStyleSheet?
+        public open fun <get-parentStyleSheet>(): org.w3c.dom.css.CSSStyleSheet?
     public open val title: kotlin.String?
         public open fun <get-title>(): kotlin.String?
-    public open val type: kotlin.String
-        public open fun <get-type>(): kotlin.String
+    public open val type: dynamic
+        public open fun <get-type>(): dynamic
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public abstract external class StyleSheetList : org.w3c.dom.ItemArrayLike<org.w3c.dom.css.StyleSheet> {
+public abstract external class StyleSheetList : org.w3c.dom.ItemArrayLike<org.w3c.dom.css.CSSStyleSheet> {
     /*primary*/ public constructor StyleSheetList()
-    // we can omit explicit override here
     public abstract override /*1*/ /*fake_override*/ val length: kotlin.Int
         public abstract override /*1*/ /*fake_override*/ fun <get-length>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): org.w3c.dom.css.StyleSheet?
+    public open override /*1*/ fun item(/*0*/ index: kotlin.Int): org.w3c.dom.css.CSSStyleSheet?
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// this class was transfered from org.w3c.dom package
-// because of different approach to generating anonymous union types [5]
 public external interface UnionElementOrProcessingInstruction {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int

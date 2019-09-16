@@ -38,14 +38,12 @@ public open external class URL {
         public final fun <set-username>(/*0*/ <set-?>: kotlin.String): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public final fun toJSON(): kotlin.String
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        public final fun createFor(/*0*/ blob: org.w3c.files.Blob): kotlin.String
-        public final fun createObjectURL(/*0*/ blob: org.w3c.files.Blob): kotlin.String
-        public final fun domainToASCII(/*0*/ domain: kotlin.String): kotlin.String
-        public final fun domainToUnicode(/*0*/ domain: kotlin.String): kotlin.String
+        public final fun createObjectURL(/*0*/ obj: dynamic): kotlin.String
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
         public final fun revokeObjectURL(/*0*/ url: kotlin.String): kotlin.Unit
@@ -63,6 +61,7 @@ public open external class URLSearchParams {
     public final fun has(/*0*/ name: kotlin.String): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public final fun set(/*0*/ name: kotlin.String, /*1*/ value: kotlin.String): kotlin.Unit
+    public final fun sort(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 

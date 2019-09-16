@@ -1,21 +1,28 @@
 package org.w3c.dom.clipboard
 
+public val org.w3c.dom.clipboard.PresentationStyle.Companion.ATTACHMENT: org.w3c.dom.clipboard.PresentationStyle
+    public inline fun org.w3c.dom.clipboard.PresentationStyle.Companion.<get-ATTACHMENT>(): org.w3c.dom.clipboard.PresentationStyle
+public val org.w3c.dom.clipboard.PresentationStyle.Companion.INLINE: org.w3c.dom.clipboard.PresentationStyle
+    public inline fun org.w3c.dom.clipboard.PresentationStyle.Companion.<get-INLINE>(): org.w3c.dom.clipboard.PresentationStyle
+public val org.w3c.dom.clipboard.PresentationStyle.Companion.UNSPECIFIED: org.w3c.dom.clipboard.PresentationStyle
+    public inline fun org.w3c.dom.clipboard.PresentationStyle.Companion.<get-UNSPECIFIED>(): org.w3c.dom.clipboard.PresentationStyle
 @kotlin.internal.InlineOnly public inline fun ClipboardEventInit(/*0*/ clipboardData: org.w3c.dom.DataTransfer? = ..., /*1*/ bubbles: kotlin.Boolean? = ..., /*2*/ cancelable: kotlin.Boolean? = ..., /*3*/ composed: kotlin.Boolean? = ...): org.w3c.dom.clipboard.ClipboardEventInit
+@kotlin.internal.InlineOnly public inline fun ClipboardItemOptions(/*0*/ presentationStyle: org.w3c.dom.clipboard.PresentationStyle? = ...): org.w3c.dom.clipboard.ClipboardItemOptions
 @kotlin.internal.InlineOnly public inline fun ClipboardPermissionDescriptor(/*0*/ allowWithoutGesture: kotlin.Boolean? = ...): org.w3c.dom.clipboard.ClipboardPermissionDescriptor
 
-public abstract external class Clipboard : org.w3c.dom.events.EventTarget {
+public open external class Clipboard : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor Clipboard()
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final fun read(): kotlin.js.Promise<org.w3c.dom.DataTransfer>
+    public final fun read(): kotlin.js.Promise<kotlin.Array<org.w3c.dom.clipboard.ClipboardItem>>
     public final fun readText(): kotlin.js.Promise<kotlin.String>
     public final override /*1*/ /*fake_override*/ fun removeEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun removeEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-    public final fun write(/*0*/ data: org.w3c.dom.DataTransfer): kotlin.js.Promise<kotlin.Unit>
+    public final fun write(/*0*/ data: kotlin.Array<org.w3c.dom.clipboard.ClipboardItem>): kotlin.js.Promise<kotlin.Unit>
     public final fun writeText(/*0*/ data: kotlin.String): kotlin.js.Promise<kotlin.Unit>
 }
 
@@ -52,7 +59,6 @@ public open external class ClipboardEvent : org.w3c.dom.events.Event {
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -87,6 +93,39 @@ public external interface ClipboardEventInit : org.w3c.dom.EventInit {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
+public open external class ClipboardItem {
+    /*primary*/ public constructor ClipboardItem(/*0*/ items: kotlin.js.Promise<dynamic>, /*1*/ options: org.w3c.dom.clipboard.ClipboardItemOptions = ...)
+    public open val delayed: kotlin.Boolean
+        public open fun <get-delayed>(): kotlin.Boolean
+    public open val lastModified: kotlin.Int
+        public open fun <get-lastModified>(): kotlin.Int
+    public open val presentationStyle: org.w3c.dom.clipboard.PresentationStyle
+        public open fun <get-presentationStyle>(): org.w3c.dom.clipboard.PresentationStyle
+    public open val types: kotlin.Array<out kotlin.String>
+        public open fun <get-types>(): kotlin.Array<out kotlin.String>
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public final fun getType(/*0*/ type: kotlin.String): kotlin.js.Promise<org.w3c.files.Blob>
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+
+    public companion object Companion {
+        /*primary*/ private constructor Companion()
+        public final fun createDelayed(/*0*/ items: () -> kotlin.js.Promise<dynamic>, /*1*/ options: org.w3c.dom.clipboard.ClipboardItemOptions = ...): org.w3c.dom.clipboard.ClipboardItem
+        public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+        public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+    }
+}
+
+public external interface ClipboardItemOptions {
+    public open var presentationStyle: org.w3c.dom.clipboard.PresentationStyle?
+        public open fun <get-presentationStyle>(): org.w3c.dom.clipboard.PresentationStyle?
+        public open fun <set-presentationStyle>(/*0*/ value: org.w3c.dom.clipboard.PresentationStyle?): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+}
+
 public external interface ClipboardPermissionDescriptor {
     public open var allowWithoutGesture: kotlin.Boolean?
         public open fun <get-allowWithoutGesture>(): kotlin.Boolean?
@@ -94,5 +133,18 @@ public external interface ClipboardPermissionDescriptor {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+}
+
+@kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface PresentationStyle {
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+
+    public companion object Companion {
+        /*primary*/ private constructor Companion()
+        public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+        public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
+    }
 }
 

@@ -1,17 +1,11 @@
 package org.w3c.performance
 
-public external interface GlobalPerformance {
-    public abstract val performance: org.w3c.performance.Performance
-        public abstract fun <get-performance>(): org.w3c.performance.Performance
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-}
-
-public abstract external class Performance : org.w3c.dom.events.EventTarget {
+public open external class Performance : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor Performance()
     public open val navigation: org.w3c.performance.PerformanceNavigation
         public open fun <get-navigation>(): org.w3c.performance.PerformanceNavigation
+    public open val timeOrigin: kotlin.Double
+        public open fun <get-timeOrigin>(): kotlin.Double
     public open val timing: org.w3c.performance.PerformanceTiming
         public open fun <get-timing>(): org.w3c.performance.PerformanceTiming
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
@@ -22,6 +16,7 @@ public abstract external class Performance : org.w3c.dom.events.EventTarget {
     public final fun now(): kotlin.Double
     public final override /*1*/ /*fake_override*/ fun removeEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun removeEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
+    public final fun toJSON(): dynamic
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
@@ -53,7 +48,6 @@ public abstract external class PerformanceNavigation {
 
 public abstract external class PerformanceTiming {
     /*primary*/ public constructor PerformanceTiming()
-    // "unsigned long long" should be converted to Number to allow to cast it to ULong [7]
     public open val connectEnd: kotlin.Number
         public open fun <get-connectEnd>(): kotlin.Number
     public open val connectStart: kotlin.Number

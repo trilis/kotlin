@@ -32,12 +32,11 @@ public val org.w3c.dom.mediacapture.MediaDeviceKind.Companion.VIDEOINPUT: org.w3
 @kotlin.internal.InlineOnly public inline fun DoubleRange(/*0*/ max: kotlin.Double? = ..., /*1*/ min: kotlin.Double? = ...): org.w3c.dom.mediacapture.DoubleRange
 @kotlin.internal.InlineOnly public inline fun MediaStreamConstraints(/*0*/ video: dynamic = ..., /*1*/ audio: dynamic = ...): org.w3c.dom.mediacapture.MediaStreamConstraints
 @kotlin.internal.InlineOnly public inline fun MediaStreamTrackEventInit(/*0*/ track: org.w3c.dom.mediacapture.MediaStreamTrack?, /*1*/ bubbles: kotlin.Boolean? = ..., /*2*/ cancelable: kotlin.Boolean? = ..., /*3*/ composed: kotlin.Boolean? = ...): org.w3c.dom.mediacapture.MediaStreamTrackEventInit
-@kotlin.internal.InlineOnly public inline fun MediaTrackCapabilities(/*0*/ width: org.w3c.dom.mediacapture.ULongRange? = ..., /*1*/ height: org.w3c.dom.mediacapture.ULongRange? = ..., /*2*/ aspectRatio: org.w3c.dom.mediacapture.DoubleRange? = ..., /*3*/ frameRate: org.w3c.dom.mediacapture.DoubleRange? = ..., /*4*/ facingMode: kotlin.Array<kotlin.String>? = ..., /*5*/ resizeMode: kotlin.Array<kotlin.String>? = ..., /*6*/ volume: org.w3c.dom.mediacapture.DoubleRange? = ..., /*7*/ sampleRate: org.w3c.dom.mediacapture.ULongRange? = ..., /*8*/ sampleSize: org.w3c.dom.mediacapture.ULongRange? = ..., /*9*/ echoCancellation: kotlin.Array<kotlin.Boolean>? = ..., /*10*/ autoGainControl: kotlin.Array<kotlin.Boolean>? = ..., /*11*/ noiseSuppression: kotlin.Array<kotlin.Boolean>? = ..., /*12*/ latency: org.w3c.dom.mediacapture.DoubleRange? = ..., /*13*/ channelCount: org.w3c.dom.mediacapture.ULongRange? = ..., /*14*/ deviceId: kotlin.String? = ..., /*15*/ groupId: kotlin.String? = ...): org.w3c.dom.mediacapture.MediaTrackCapabilities
-@kotlin.internal.InlineOnly public inline fun MediaTrackConstraintSet(/*0*/ width: dynamic = ..., /*1*/ height: dynamic = ..., /*2*/ aspectRatio: dynamic = ..., /*3*/ frameRate: dynamic = ..., /*4*/ facingMode: dynamic = ..., /*5*/ resizeMode: dynamic = ..., /*6*/ volume: dynamic = ..., /*7*/ sampleRate: dynamic = ..., /*8*/ sampleSize: dynamic = ..., /*9*/ echoCancellation: dynamic = ..., /*10*/ autoGainControl: dynamic = ..., /*11*/ noiseSuppression: dynamic = ..., /*12*/ latency: dynamic = ..., /*13*/ channelCount: dynamic = ..., /*14*/ deviceId: dynamic = ..., /*15*/ groupId: dynamic = ...): org.w3c.dom.mediacapture.MediaTrackConstraintSet
-@kotlin.internal.InlineOnly public inline fun MediaTrackConstraints(/*0*/ advanced: kotlin.Array<org.w3c.dom.mediacapture.MediaTrackConstraintSet>? = ..., /*1*/ width: dynamic = ..., /*2*/ height: dynamic = ..., /*3*/ aspectRatio: dynamic = ..., /*4*/ frameRate: dynamic = ..., /*5*/ facingMode: dynamic = ..., /*6*/ resizeMode: dynamic = ..., /*7*/ volume: dynamic = ..., /*8*/ sampleRate: dynamic = ..., /*9*/ sampleSize: dynamic = ..., /*10*/ echoCancellation: dynamic = ..., /*11*/ autoGainControl: dynamic = ..., /*12*/ noiseSuppression: dynamic = ..., /*13*/ latency: dynamic = ..., /*14*/ channelCount: dynamic = ..., /*15*/ deviceId: dynamic = ..., /*16*/ groupId: dynamic = ...): org.w3c.dom.mediacapture.MediaTrackConstraints
-@kotlin.internal.InlineOnly public inline fun MediaTrackSettings(/*0*/ width: kotlin.Int? = ..., /*1*/ height: kotlin.Int? = ..., /*2*/ aspectRatio: kotlin.Double? = ..., /*3*/ frameRate: kotlin.Double? = ..., /*4*/ facingMode: kotlin.String? = ..., /*5*/ resizeMode: kotlin.String? = ..., /*6*/ volume: kotlin.Double? = ..., /*7*/ sampleRate: kotlin.Int? = ..., /*8*/ sampleSize: kotlin.Int? = ..., /*9*/ echoCancellation: kotlin.Boolean? = ..., /*10*/ autoGainControl: kotlin.Boolean? = ..., /*11*/ noiseSuppression: kotlin.Boolean? = ..., /*12*/ latency: kotlin.Double? = ..., /*13*/ channelCount: kotlin.Int? = ..., /*14*/ deviceId: kotlin.String? = ..., /*15*/ groupId: kotlin.String? = ...): org.w3c.dom.mediacapture.MediaTrackSettings
-@kotlin.internal.InlineOnly public inline fun MediaTrackSupportedConstraints(/*0*/ width: kotlin.Boolean? = ..., /*1*/ height: kotlin.Boolean? = ..., /*2*/ aspectRatio: kotlin.Boolean? = ..., /*3*/ frameRate: kotlin.Boolean? = ..., /*4*/ facingMode: kotlin.Boolean? = ..., /*5*/ resizeMode: kotlin.Boolean? = ..., /*6*/ volume: kotlin.Boolean? = ..., /*7*/ sampleRate: kotlin.Boolean? = ..., /*8*/ sampleSize: kotlin.Boolean? = ..., /*9*/ echoCancellation: kotlin.Boolean? = ..., /*10*/ autoGainControl: kotlin.Boolean? = ..., /*11*/ noiseSuppression: kotlin.Boolean? = ..., /*12*/ latency: kotlin.Boolean? = ..., /*13*/ channelCount: kotlin.Boolean? = ..., /*14*/ deviceId: kotlin.Boolean? = ..., /*15*/ groupId: kotlin.Boolean? = ...): org.w3c.dom.mediacapture.MediaTrackSupportedConstraints
-@kotlin.internal.InlineOnly public inline fun OverconstrainedErrorEventInit(/*0*/ error: dynamic = ..., /*1*/ bubbles: kotlin.Boolean? = ..., /*2*/ cancelable: kotlin.Boolean? = ..., /*3*/ composed: kotlin.Boolean? = ...): org.w3c.dom.mediacapture.OverconstrainedErrorEventInit
+@kotlin.internal.InlineOnly public inline fun MediaTrackCapabilities(/*0*/ width: org.w3c.dom.mediacapture.ULongRange? = ..., /*1*/ height: org.w3c.dom.mediacapture.ULongRange? = ..., /*2*/ aspectRatio: org.w3c.dom.mediacapture.DoubleRange? = ..., /*3*/ frameRate: org.w3c.dom.mediacapture.DoubleRange? = ..., /*4*/ facingMode: kotlin.Array<kotlin.String>? = ..., /*5*/ resizeMode: kotlin.Array<kotlin.String>? = ..., /*6*/ sampleRate: org.w3c.dom.mediacapture.ULongRange? = ..., /*7*/ sampleSize: org.w3c.dom.mediacapture.ULongRange? = ..., /*8*/ echoCancellation: kotlin.Array<kotlin.Boolean>? = ..., /*9*/ autoGainControl: kotlin.Array<kotlin.Boolean>? = ..., /*10*/ noiseSuppression: kotlin.Array<kotlin.Boolean>? = ..., /*11*/ latency: org.w3c.dom.mediacapture.DoubleRange? = ..., /*12*/ channelCount: org.w3c.dom.mediacapture.ULongRange? = ..., /*13*/ deviceId: kotlin.String? = ..., /*14*/ groupId: kotlin.String? = ...): org.w3c.dom.mediacapture.MediaTrackCapabilities
+@kotlin.internal.InlineOnly public inline fun MediaTrackConstraintSet(/*0*/ width: dynamic = ..., /*1*/ height: dynamic = ..., /*2*/ aspectRatio: dynamic = ..., /*3*/ frameRate: dynamic = ..., /*4*/ facingMode: dynamic = ..., /*5*/ resizeMode: dynamic = ..., /*6*/ sampleRate: dynamic = ..., /*7*/ sampleSize: dynamic = ..., /*8*/ echoCancellation: dynamic = ..., /*9*/ autoGainControl: dynamic = ..., /*10*/ noiseSuppression: dynamic = ..., /*11*/ latency: dynamic = ..., /*12*/ channelCount: dynamic = ..., /*13*/ deviceId: dynamic = ..., /*14*/ groupId: dynamic = ...): org.w3c.dom.mediacapture.MediaTrackConstraintSet
+@kotlin.internal.InlineOnly public inline fun MediaTrackConstraints(/*0*/ advanced: kotlin.Array<org.w3c.dom.mediacapture.MediaTrackConstraintSet>? = ..., /*1*/ width: dynamic = ..., /*2*/ height: dynamic = ..., /*3*/ aspectRatio: dynamic = ..., /*4*/ frameRate: dynamic = ..., /*5*/ facingMode: dynamic = ..., /*6*/ resizeMode: dynamic = ..., /*7*/ sampleRate: dynamic = ..., /*8*/ sampleSize: dynamic = ..., /*9*/ echoCancellation: dynamic = ..., /*10*/ autoGainControl: dynamic = ..., /*11*/ noiseSuppression: dynamic = ..., /*12*/ latency: dynamic = ..., /*13*/ channelCount: dynamic = ..., /*14*/ deviceId: dynamic = ..., /*15*/ groupId: dynamic = ...): org.w3c.dom.mediacapture.MediaTrackConstraints
+@kotlin.internal.InlineOnly public inline fun MediaTrackSettings(/*0*/ width: kotlin.Int? = ..., /*1*/ height: kotlin.Int? = ..., /*2*/ aspectRatio: kotlin.Double? = ..., /*3*/ frameRate: kotlin.Double? = ..., /*4*/ facingMode: kotlin.String? = ..., /*5*/ resizeMode: kotlin.String? = ..., /*6*/ sampleRate: kotlin.Int? = ..., /*7*/ sampleSize: kotlin.Int? = ..., /*8*/ echoCancellation: kotlin.Boolean? = ..., /*9*/ autoGainControl: kotlin.Boolean? = ..., /*10*/ noiseSuppression: kotlin.Boolean? = ..., /*11*/ latency: kotlin.Double? = ..., /*12*/ channelCount: kotlin.Int? = ..., /*13*/ deviceId: kotlin.String? = ..., /*14*/ groupId: kotlin.String? = ...): org.w3c.dom.mediacapture.MediaTrackSettings
+@kotlin.internal.InlineOnly public inline fun MediaTrackSupportedConstraints(/*0*/ width: kotlin.Boolean? = ..., /*1*/ height: kotlin.Boolean? = ..., /*2*/ aspectRatio: kotlin.Boolean? = ..., /*3*/ frameRate: kotlin.Boolean? = ..., /*4*/ facingMode: kotlin.Boolean? = ..., /*5*/ resizeMode: kotlin.Boolean? = ..., /*6*/ sampleRate: kotlin.Boolean? = ..., /*7*/ sampleSize: kotlin.Boolean? = ..., /*8*/ echoCancellation: kotlin.Boolean? = ..., /*9*/ autoGainControl: kotlin.Boolean? = ..., /*10*/ noiseSuppression: kotlin.Boolean? = ..., /*11*/ latency: kotlin.Boolean? = ..., /*12*/ channelCount: kotlin.Boolean? = ..., /*13*/ deviceId: kotlin.Boolean? = ..., /*14*/ groupId: kotlin.Boolean? = ...): org.w3c.dom.mediacapture.MediaTrackSupportedConstraints
 @kotlin.internal.InlineOnly public inline fun Settings(): org.w3c.dom.mediacapture.Settings
 @kotlin.internal.InlineOnly public inline fun ULongRange(/*0*/ max: kotlin.Int? = ..., /*1*/ min: kotlin.Int? = ...): org.w3c.dom.mediacapture.ULongRange
 
@@ -107,16 +106,13 @@ public external interface ConstrainULongRange : org.w3c.dom.mediacapture.ULongRa
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public external interface ConstrainablePattern {
-    // we add get() and set(value) = definedExternally to allow users to inherit without overriding [9]
-    public open var onoverconstrained: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onoverconstrained>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onoverconstrained>(/*0*/ value: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public abstract fun applyConstraints(/*0*/ constraints: org.w3c.dom.mediacapture.Constraints = ...): kotlin.js.Promise<kotlin.Unit>
+public abstract external class ConstrainablePattern {
+    /*primary*/ public constructor ConstrainablePattern()
+    public final fun applyConstraints(/*0*/ constraints: org.w3c.dom.mediacapture.Constraints = ...): kotlin.js.Promise<kotlin.Unit>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public abstract fun getCapabilities(): org.w3c.dom.mediacapture.Capabilities
-    public abstract fun getConstraints(): org.w3c.dom.mediacapture.Constraints
-    public abstract fun getSettings(): org.w3c.dom.mediacapture.Settings
+    public final fun getCapabilities(): org.w3c.dom.mediacapture.Capabilities
+    public final fun getConstraints(): org.w3c.dom.mediacapture.Constraints
+    public final fun getSettings(): org.w3c.dom.mediacapture.Settings
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
@@ -181,7 +177,6 @@ public abstract external class MediaDeviceInfo {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface MediaDeviceKind {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -195,15 +190,14 @@ public abstract external class MediaDeviceInfo {
     }
 }
 
-public abstract external class MediaDevices : org.w3c.dom.events.EventTarget {
+public open external class MediaDevices : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor MediaDevices()
-    public open var ondevicechange: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-ondevicechange>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-ondevicechange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var ondevicechange: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-ondevicechange>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-ondevicechange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
-    // nested type parameters were converted to dynamic because of a parser bug [2]
     public final fun enumerateDevices(): kotlin.js.Promise<kotlin.Array<org.w3c.dom.mediacapture.MediaDeviceInfo>>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final fun getSupportedConstraints(): org.w3c.dom.mediacapture.MediaTrackSupportedConstraints
@@ -257,11 +251,11 @@ public external interface MediaStreamConstraints {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public abstract external class MediaStreamTrack : org.w3c.dom.events.EventTarget {
+public open external class MediaStreamTrack : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor MediaStreamTrack()
-    public open var enabled: kotlin.Boolean
-        public open fun <get-enabled>(): kotlin.Boolean
-        public open fun <set-enabled>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public final var enabled: kotlin.Boolean
+        public final fun <get-enabled>(): kotlin.Boolean
+        public final fun <set-enabled>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open val id: kotlin.String
         public open fun <get-id>(): kotlin.String
     public open val kind: kotlin.String
@@ -270,18 +264,15 @@ public abstract external class MediaStreamTrack : org.w3c.dom.events.EventTarget
         public open fun <get-label>(): kotlin.String
     public open val muted: kotlin.Boolean
         public open fun <get-muted>(): kotlin.Boolean
-    public open var onended: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onended>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onended>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onmute: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onmute>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onmute>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onoverconstrained: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onoverconstrained>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onoverconstrained>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onunmute: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onunmute>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onunmute>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onended: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onended>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onended>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onmute: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onmute>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onmute>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onunmute: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onunmute>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onunmute>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public open val readyState: org.w3c.dom.mediacapture.MediaStreamTrackState
         public open fun <get-readyState>(): org.w3c.dom.mediacapture.MediaStreamTrackState
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
@@ -333,7 +324,6 @@ public open external class MediaStreamTrackEvent : org.w3c.dom.events.Event {
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -368,7 +358,6 @@ public external interface MediaStreamTrackEventInit : org.w3c.dom.EventInit {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface MediaStreamTrackState {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -425,9 +414,6 @@ public external interface MediaTrackCapabilities {
     public open var sampleSize: org.w3c.dom.mediacapture.ULongRange?
         public open fun <get-sampleSize>(): org.w3c.dom.mediacapture.ULongRange?
         public open fun <set-sampleSize>(/*0*/ value: org.w3c.dom.mediacapture.ULongRange?): kotlin.Unit
-    public open var volume: org.w3c.dom.mediacapture.DoubleRange?
-        public open fun <get-volume>(): org.w3c.dom.mediacapture.DoubleRange?
-        public open fun <set-volume>(/*0*/ value: org.w3c.dom.mediacapture.DoubleRange?): kotlin.Unit
     public open var width: org.w3c.dom.mediacapture.ULongRange?
         public open fun <get-width>(): org.w3c.dom.mediacapture.ULongRange?
         public open fun <set-width>(/*0*/ value: org.w3c.dom.mediacapture.ULongRange?): kotlin.Unit
@@ -479,9 +465,6 @@ public external interface MediaTrackConstraintSet {
     public open var sampleSize: dynamic
         public open fun <get-sampleSize>(): dynamic
         public open fun <set-sampleSize>(/*0*/ value: dynamic): kotlin.Unit
-    public open var volume: dynamic
-        public open fun <get-volume>(): dynamic
-        public open fun <set-volume>(/*0*/ value: dynamic): kotlin.Unit
     public open var width: dynamic
         public open fun <get-width>(): dynamic
         public open fun <set-width>(/*0*/ value: dynamic): kotlin.Unit
@@ -536,9 +519,6 @@ public external interface MediaTrackConstraints : org.w3c.dom.mediacapture.Media
     public open override /*1*/ /*fake_override*/ var sampleSize: dynamic
         public open override /*1*/ /*fake_override*/ fun <get-sampleSize>(): dynamic
         public open override /*1*/ /*fake_override*/ fun <set-sampleSize>(/*0*/ value: dynamic): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var volume: dynamic
-        public open override /*1*/ /*fake_override*/ fun <get-volume>(): dynamic
-        public open override /*1*/ /*fake_override*/ fun <set-volume>(/*0*/ value: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ var width: dynamic
         public open override /*1*/ /*fake_override*/ fun <get-width>(): dynamic
         public open override /*1*/ /*fake_override*/ fun <set-width>(/*0*/ value: dynamic): kotlin.Unit
@@ -590,9 +570,6 @@ public external interface MediaTrackSettings {
     public open var sampleSize: kotlin.Int?
         public open fun <get-sampleSize>(): kotlin.Int?
         public open fun <set-sampleSize>(/*0*/ value: kotlin.Int?): kotlin.Unit
-    public open var volume: kotlin.Double?
-        public open fun <get-volume>(): kotlin.Double?
-        public open fun <set-volume>(/*0*/ value: kotlin.Double?): kotlin.Unit
     public open var width: kotlin.Int?
         public open fun <get-width>(): kotlin.Int?
         public open fun <set-width>(/*0*/ value: kotlin.Int?): kotlin.Unit
@@ -644,80 +621,9 @@ public external interface MediaTrackSupportedConstraints {
     public open var sampleSize: kotlin.Boolean?
         public open fun <get-sampleSize>(): kotlin.Boolean?
         public open fun <set-sampleSize>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open var volume: kotlin.Boolean?
-        public open fun <get-volume>(): kotlin.Boolean?
-        public open fun <set-volume>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
     public open var width: kotlin.Boolean?
         public open fun <get-width>(): kotlin.Boolean?
         public open fun <set-width>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-}
-
-public open external class OverconstrainedErrorEvent : org.w3c.dom.events.Event {
-    /*primary*/ public constructor OverconstrainedErrorEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.mediacapture.OverconstrainedErrorEventInit)
-    public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ val composed: kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun <get-composed>(): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ val currentTarget: org.w3c.dom.events.EventTarget?
-        public open override /*1*/ /*fake_override*/ fun <get-currentTarget>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val defaultPrevented: kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun <get-defaultPrevented>(): kotlin.Boolean
-    public open val error: dynamic
-        public open fun <get-error>(): dynamic
-    public open override /*1*/ /*fake_override*/ val eventPhase: kotlin.Short
-        public open override /*1*/ /*fake_override*/ fun <get-eventPhase>(): kotlin.Short
-    public open override /*1*/ /*fake_override*/ val isTrusted: kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
-        public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
-    public open override /*1*/ /*fake_override*/ val type: kotlin.String
-        public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
-    public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
-    public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
-    public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
-    public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-
-    // we should add static members from parents to emulate inheritance [1]
-    public companion object Companion {
-        /*primary*/ private constructor Companion()
-        public final val AT_TARGET: kotlin.Short
-            public final fun <get-AT_TARGET>(): kotlin.Short
-        public final val BUBBLING_PHASE: kotlin.Short
-            public final fun <get-BUBBLING_PHASE>(): kotlin.Short
-        public final val CAPTURING_PHASE: kotlin.Short
-            public final fun <get-CAPTURING_PHASE>(): kotlin.Short
-        public final val NONE: kotlin.Short
-            public final fun <get-NONE>(): kotlin.Short
-        public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-        public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-        public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-    }
-}
-
-public external interface OverconstrainedErrorEventInit : org.w3c.dom.EventInit {
-    public open override /*1*/ /*fake_override*/ var bubbles: kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <set-bubbles>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var cancelable: kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <set-cancelable>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var composed: kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <get-composed>(): kotlin.Boolean?
-        public open override /*1*/ /*fake_override*/ fun <set-composed>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open var error: dynamic
-        public open fun <get-error>(): dynamic
-        public open fun <set-error>(/*0*/ value: dynamic): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
@@ -741,7 +647,6 @@ public external interface ULongRange {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface VideoFacingModeEnum {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -755,7 +660,6 @@ public external interface ULongRange {
     }
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface VideoResizeModeEnum {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int

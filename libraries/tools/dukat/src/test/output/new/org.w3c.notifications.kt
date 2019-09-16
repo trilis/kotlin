@@ -15,7 +15,7 @@ public val org.w3c.notifications.NotificationDirection.Companion.RTL: org.w3c.no
 @kotlin.internal.InlineOnly public inline fun GetNotificationOptions(/*0*/ tag: kotlin.String? = ...): org.w3c.notifications.GetNotificationOptions
 @kotlin.internal.InlineOnly public inline fun NotificationAction(/*0*/ action: kotlin.String?, /*1*/ title: kotlin.String?, /*2*/ icon: kotlin.String? = ...): org.w3c.notifications.NotificationAction
 @kotlin.internal.InlineOnly public inline fun NotificationEventInit(/*0*/ notification: org.w3c.notifications.Notification?, /*1*/ action: kotlin.String? = ..., /*2*/ bubbles: kotlin.Boolean? = ..., /*3*/ cancelable: kotlin.Boolean? = ..., /*4*/ composed: kotlin.Boolean? = ...): org.w3c.notifications.NotificationEventInit
-@kotlin.internal.InlineOnly public inline fun NotificationOptions(/*0*/ dir: org.w3c.notifications.NotificationDirection? = ..., /*1*/ lang: kotlin.String? = ..., /*2*/ body: kotlin.String? = ..., /*3*/ tag: kotlin.String? = ..., /*4*/ image: kotlin.String? = ..., /*5*/ icon: kotlin.String? = ..., /*6*/ badge: kotlin.String? = ..., /*7*/ sound: kotlin.String? = ..., /*8*/ vibrate: dynamic = ..., /*9*/ timestamp: kotlin.Number? = ..., /*10*/ renotify: kotlin.Boolean? = ..., /*11*/ silent: kotlin.Boolean? = ..., /*12*/ noscreen: kotlin.Boolean? = ..., /*13*/ requireInteraction: kotlin.Boolean? = ..., /*14*/ sticky: kotlin.Boolean? = ..., /*15*/ data: kotlin.Any? = ..., /*16*/ actions: kotlin.Array<org.w3c.notifications.NotificationAction>? = ...): org.w3c.notifications.NotificationOptions
+@kotlin.internal.InlineOnly public inline fun NotificationOptions(/*0*/ dir: org.w3c.notifications.NotificationDirection? = ..., /*1*/ lang: kotlin.String? = ..., /*2*/ body: kotlin.String? = ..., /*3*/ tag: kotlin.String? = ..., /*4*/ image: kotlin.String? = ..., /*5*/ icon: kotlin.String? = ..., /*6*/ badge: kotlin.String? = ..., /*7*/ vibrate: dynamic = ..., /*8*/ timestamp: kotlin.Number? = ..., /*9*/ renotify: kotlin.Boolean? = ..., /*10*/ silent: kotlin.Boolean? = ..., /*11*/ requireInteraction: kotlin.Boolean? = ..., /*12*/ data: kotlin.Any? = ..., /*13*/ actions: kotlin.Array<org.w3c.notifications.NotificationAction>? = ...): org.w3c.notifications.NotificationOptions
 
 public external interface GetNotificationOptions {
     public open var tag: kotlin.String?
@@ -44,24 +44,24 @@ public open external class Notification : org.w3c.dom.events.EventTarget {
         public open fun <get-image>(): kotlin.String
     public open val lang: kotlin.String
         public open fun <get-lang>(): kotlin.String
-    public open val noscreen: kotlin.Boolean
-        public open fun <get-noscreen>(): kotlin.Boolean
     public final var onclick: ((org.w3c.dom.events.MouseEvent) -> dynamic)?
         public final fun <get-onclick>(): ((org.w3c.dom.events.MouseEvent) -> dynamic)?
         public final fun <set-onclick>(/*0*/ <set-?>: ((org.w3c.dom.events.MouseEvent) -> dynamic)?): kotlin.Unit
+    public final var onclose: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onclose>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onclose>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onshow: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onshow>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onshow>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public open val renotify: kotlin.Boolean
         public open fun <get-renotify>(): kotlin.Boolean
     public open val requireInteraction: kotlin.Boolean
         public open fun <get-requireInteraction>(): kotlin.Boolean
     public open val silent: kotlin.Boolean
         public open fun <get-silent>(): kotlin.Boolean
-    public open val sound: kotlin.String
-        public open fun <get-sound>(): kotlin.String
-    public open val sticky: kotlin.Boolean
-        public open fun <get-sticky>(): kotlin.Boolean
     public open val tag: kotlin.String
         public open fun <get-tag>(): kotlin.String
     public open val timestamp: kotlin.Number
@@ -82,10 +82,8 @@ public open external class Notification : org.w3c.dom.events.EventTarget {
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        // this property should be read-only, but because of a parser bug it was var [2]
         public final val maxActions: kotlin.Int
             public final fun <get-maxActions>(): kotlin.Int
-        // this property should be read-only, but because of a parser bug it was var [2]
         public final val permission: org.w3c.notifications.NotificationPermission
             public final fun <get-permission>(): org.w3c.notifications.NotificationPermission
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
@@ -110,7 +108,6 @@ public external interface NotificationAction {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface NotificationDirection {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -160,7 +157,6 @@ public open external class NotificationEvent : org.w3c.workers.ExtendableEvent {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
     public final override /*1*/ /*fake_override*/ fun waitUntil(/*0*/ f: kotlin.js.Promise<kotlin.Any?>): kotlin.Unit
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -223,9 +219,6 @@ public external interface NotificationOptions {
     public open var lang: kotlin.String?
         public open fun <get-lang>(): kotlin.String?
         public open fun <set-lang>(/*0*/ value: kotlin.String?): kotlin.Unit
-    public open var noscreen: kotlin.Boolean?
-        public open fun <get-noscreen>(): kotlin.Boolean?
-        public open fun <set-noscreen>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
     public open var renotify: kotlin.Boolean?
         public open fun <get-renotify>(): kotlin.Boolean?
         public open fun <set-renotify>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
@@ -235,12 +228,6 @@ public external interface NotificationOptions {
     public open var silent: kotlin.Boolean?
         public open fun <get-silent>(): kotlin.Boolean?
         public open fun <set-silent>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    public open var sound: kotlin.String?
-        public open fun <get-sound>(): kotlin.String?
-        public open fun <set-sound>(/*0*/ value: kotlin.String?): kotlin.Unit
-    public open var sticky: kotlin.Boolean?
-        public open fun <get-sticky>(): kotlin.Boolean?
-        public open fun <set-sticky>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
     public open var tag: kotlin.String?
         public open fun <get-tag>(): kotlin.String?
         public open fun <set-tag>(/*0*/ value: kotlin.String?): kotlin.Unit
@@ -255,7 +242,6 @@ public external interface NotificationOptions {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface NotificationPermission {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int

@@ -1,6 +1,6 @@
 package org.w3c.css.masking
 
-public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, org.w3c.dom.svg.SVGUnitTypes {
+public open external class SVGClipPathElement : org.w3c.dom.svg.SVGElement {
     /*primary*/ public constructor SVGClipPathElement()
     public open override /*1*/ /*fake_override*/ val assignedSlot: org.w3c.dom.HTMLSlotElement?
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
@@ -341,7 +341,7 @@ public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, 
     public abstract override /*1*/ /*fake_override*/ fun convertQuadFromNode(/*0*/ quad: dynamic, /*1*/ from: dynamic, /*2*/ options: org.w3c.dom.ConvertCoordinateOptions = ...): org.w3c.dom.DOMQuad
     public abstract override /*1*/ /*fake_override*/ fun convertRectFromNode(/*0*/ rect: org.w3c.dom.DOMRectReadOnly, /*1*/ from: dynamic, /*2*/ options: org.w3c.dom.ConvertCoordinateOptions = ...): org.w3c.dom.DOMQuad
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
-    public open override /*2*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun focus(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun getAttribute(/*0*/ qualifiedName: kotlin.String): kotlin.String?
     public final override /*1*/ /*fake_override*/ fun getAttributeNS(/*0*/ namespace: kotlin.String?, /*1*/ localName: kotlin.String): kotlin.String?
@@ -360,7 +360,7 @@ public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, 
     public final override /*1*/ /*fake_override*/ fun hasAttributes(): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun hasChildNodes(): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun hasPointerCapture(/*0*/ pointerId: kotlin.Int): kotlin.Boolean
-    public open override /*2*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun insertAdjacentElement(/*0*/ where: kotlin.String, /*1*/ element: org.w3c.dom.Element): org.w3c.dom.Element?
     public final override /*1*/ /*fake_override*/ fun insertAdjacentHTML(/*0*/ position: kotlin.String, /*1*/ text: kotlin.String): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun insertAdjacentText(/*0*/ where: kotlin.String, /*1*/ data: kotlin.String): kotlin.Unit
@@ -399,12 +399,11 @@ public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, 
     public final override /*1*/ /*fake_override*/ fun setAttributeNode(/*0*/ attr: org.w3c.dom.Attr): org.w3c.dom.Attr?
     public final override /*1*/ /*fake_override*/ fun setAttributeNodeNS(/*0*/ attr: org.w3c.dom.Attr): org.w3c.dom.Attr?
     public final override /*1*/ /*fake_override*/ fun setPointerCapture(/*0*/ pointerId: kotlin.Int): kotlin.Unit
-    public open override /*2*/ /*fake_override*/ fun toString(): kotlin.String
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
     public final override /*1*/ /*fake_override*/ fun webkitMatchesSelector(/*0*/ selectors: kotlin.String): kotlin.Boolean
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        // we should add static members from parents to emulate inheritance [1]
         public final val ATTRIBUTE_NODE: kotlin.Short
             public final fun <get-ATTRIBUTE_NODE>(): kotlin.Short
         public final val CDATA_SECTION_NODE: kotlin.Short
@@ -439,13 +438,6 @@ public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, 
             public final fun <get-NOTATION_NODE>(): kotlin.Short
         public final val PROCESSING_INSTRUCTION_NODE: kotlin.Short
             public final fun <get-PROCESSING_INSTRUCTION_NODE>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_OBJECTBOUNDINGBOX>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_UNKNOWN: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_UNKNOWN>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_USERSPACEONUSE: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_USERSPACEONUSE>(): kotlin.Short
-        // we should add static members from parents to emulate inheritance [1]
         public final val TEXT_NODE: kotlin.Short
             public final fun <get-TEXT_NODE>(): kotlin.Short
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
@@ -454,7 +446,7 @@ public abstract external class SVGClipPathElement : org.w3c.dom.svg.SVGElement, 
     }
 }
 
-public abstract external class SVGMaskElement : org.w3c.dom.svg.SVGElement, org.w3c.dom.svg.SVGUnitTypes {
+public open external class SVGMaskElement : org.w3c.dom.svg.SVGElement {
     /*primary*/ public constructor SVGMaskElement()
     public open override /*1*/ /*fake_override*/ val assignedSlot: org.w3c.dom.HTMLSlotElement?
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
@@ -803,7 +795,7 @@ public abstract external class SVGMaskElement : org.w3c.dom.svg.SVGElement, org.
     public abstract override /*1*/ /*fake_override*/ fun convertQuadFromNode(/*0*/ quad: dynamic, /*1*/ from: dynamic, /*2*/ options: org.w3c.dom.ConvertCoordinateOptions = ...): org.w3c.dom.DOMQuad
     public abstract override /*1*/ /*fake_override*/ fun convertRectFromNode(/*0*/ rect: org.w3c.dom.DOMRectReadOnly, /*1*/ from: dynamic, /*2*/ options: org.w3c.dom.ConvertCoordinateOptions = ...): org.w3c.dom.DOMQuad
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
-    public open override /*2*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun focus(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun getAttribute(/*0*/ qualifiedName: kotlin.String): kotlin.String?
     public final override /*1*/ /*fake_override*/ fun getAttributeNS(/*0*/ namespace: kotlin.String?, /*1*/ localName: kotlin.String): kotlin.String?
@@ -822,7 +814,7 @@ public abstract external class SVGMaskElement : org.w3c.dom.svg.SVGElement, org.
     public final override /*1*/ /*fake_override*/ fun hasAttributes(): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun hasChildNodes(): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun hasPointerCapture(/*0*/ pointerId: kotlin.Int): kotlin.Boolean
-    public open override /*2*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun insertAdjacentElement(/*0*/ where: kotlin.String, /*1*/ element: org.w3c.dom.Element): org.w3c.dom.Element?
     public final override /*1*/ /*fake_override*/ fun insertAdjacentHTML(/*0*/ position: kotlin.String, /*1*/ text: kotlin.String): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun insertAdjacentText(/*0*/ where: kotlin.String, /*1*/ data: kotlin.String): kotlin.Unit
@@ -861,12 +853,11 @@ public abstract external class SVGMaskElement : org.w3c.dom.svg.SVGElement, org.
     public final override /*1*/ /*fake_override*/ fun setAttributeNode(/*0*/ attr: org.w3c.dom.Attr): org.w3c.dom.Attr?
     public final override /*1*/ /*fake_override*/ fun setAttributeNodeNS(/*0*/ attr: org.w3c.dom.Attr): org.w3c.dom.Attr?
     public final override /*1*/ /*fake_override*/ fun setPointerCapture(/*0*/ pointerId: kotlin.Int): kotlin.Unit
-    public open override /*2*/ /*fake_override*/ fun toString(): kotlin.String
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
     public final override /*1*/ /*fake_override*/ fun webkitMatchesSelector(/*0*/ selectors: kotlin.String): kotlin.Boolean
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        // we should add static members from parents to emulate inheritance [1]
         public final val ATTRIBUTE_NODE: kotlin.Short
             public final fun <get-ATTRIBUTE_NODE>(): kotlin.Short
         public final val CDATA_SECTION_NODE: kotlin.Short
@@ -901,13 +892,6 @@ public abstract external class SVGMaskElement : org.w3c.dom.svg.SVGElement, org.
             public final fun <get-NOTATION_NODE>(): kotlin.Short
         public final val PROCESSING_INSTRUCTION_NODE: kotlin.Short
             public final fun <get-PROCESSING_INSTRUCTION_NODE>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_OBJECTBOUNDINGBOX>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_UNKNOWN: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_UNKNOWN>(): kotlin.Short
-        public final val SVG_UNIT_TYPE_USERSPACEONUSE: kotlin.Short
-            public final fun <get-SVG_UNIT_TYPE_USERSPACEONUSE>(): kotlin.Short
-        // we should add static members from parents to emulate inheritance [1]
         public final val TEXT_NODE: kotlin.Short
             public final fun <get-TEXT_NODE>(): kotlin.Short
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean

@@ -3,18 +3,19 @@ package org.w3c.dom.events
 @kotlin.internal.InlineOnly public inline fun CompositionEventInit(/*0*/ data: kotlin.String? = ..., /*1*/ view: org.w3c.dom.Window? = ..., /*2*/ detail: kotlin.Int? = ..., /*3*/ bubbles: kotlin.Boolean? = ..., /*4*/ cancelable: kotlin.Boolean? = ..., /*5*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.CompositionEventInit
 @kotlin.internal.InlineOnly public inline fun EventModifierInit(/*0*/ ctrlKey: kotlin.Boolean? = ..., /*1*/ shiftKey: kotlin.Boolean? = ..., /*2*/ altKey: kotlin.Boolean? = ..., /*3*/ metaKey: kotlin.Boolean? = ..., /*4*/ modifierAltGraph: kotlin.Boolean? = ..., /*5*/ modifierCapsLock: kotlin.Boolean? = ..., /*6*/ modifierFn: kotlin.Boolean? = ..., /*7*/ modifierFnLock: kotlin.Boolean? = ..., /*8*/ modifierHyper: kotlin.Boolean? = ..., /*9*/ modifierNumLock: kotlin.Boolean? = ..., /*10*/ modifierScrollLock: kotlin.Boolean? = ..., /*11*/ modifierSuper: kotlin.Boolean? = ..., /*12*/ modifierSymbol: kotlin.Boolean? = ..., /*13*/ modifierSymbolLock: kotlin.Boolean? = ..., /*14*/ view: org.w3c.dom.Window? = ..., /*15*/ detail: kotlin.Int? = ..., /*16*/ bubbles: kotlin.Boolean? = ..., /*17*/ cancelable: kotlin.Boolean? = ..., /*18*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.EventModifierInit
 @kotlin.internal.InlineOnly public inline fun FocusEventInit(/*0*/ relatedTarget: org.w3c.dom.events.EventTarget? = ..., /*1*/ view: org.w3c.dom.Window? = ..., /*2*/ detail: kotlin.Int? = ..., /*3*/ bubbles: kotlin.Boolean? = ..., /*4*/ cancelable: kotlin.Boolean? = ..., /*5*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.FocusEventInit
-@kotlin.internal.InlineOnly public inline fun InputEventInit(/*0*/ data: kotlin.String? = ..., /*1*/ isComposing: kotlin.Boolean? = ..., /*2*/ view: org.w3c.dom.Window? = ..., /*3*/ detail: kotlin.Int? = ..., /*4*/ bubbles: kotlin.Boolean? = ..., /*5*/ cancelable: kotlin.Boolean? = ..., /*6*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.InputEventInit
+@kotlin.internal.InlineOnly public inline fun InputEventInit(/*0*/ data: kotlin.String? = ..., /*1*/ isComposing: kotlin.Boolean? = ..., /*2*/ inputType: kotlin.String? = ..., /*3*/ view: org.w3c.dom.Window? = ..., /*4*/ detail: kotlin.Int? = ..., /*5*/ bubbles: kotlin.Boolean? = ..., /*6*/ cancelable: kotlin.Boolean? = ..., /*7*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.InputEventInit
 @kotlin.internal.InlineOnly public inline fun KeyboardEventInit(/*0*/ key: kotlin.String? = ..., /*1*/ code: kotlin.String? = ..., /*2*/ location: kotlin.Int? = ..., /*3*/ repeat: kotlin.Boolean? = ..., /*4*/ isComposing: kotlin.Boolean? = ..., /*5*/ ctrlKey: kotlin.Boolean? = ..., /*6*/ shiftKey: kotlin.Boolean? = ..., /*7*/ altKey: kotlin.Boolean? = ..., /*8*/ metaKey: kotlin.Boolean? = ..., /*9*/ modifierAltGraph: kotlin.Boolean? = ..., /*10*/ modifierCapsLock: kotlin.Boolean? = ..., /*11*/ modifierFn: kotlin.Boolean? = ..., /*12*/ modifierFnLock: kotlin.Boolean? = ..., /*13*/ modifierHyper: kotlin.Boolean? = ..., /*14*/ modifierNumLock: kotlin.Boolean? = ..., /*15*/ modifierScrollLock: kotlin.Boolean? = ..., /*16*/ modifierSuper: kotlin.Boolean? = ..., /*17*/ modifierSymbol: kotlin.Boolean? = ..., /*18*/ modifierSymbolLock: kotlin.Boolean? = ..., /*19*/ view: org.w3c.dom.Window? = ..., /*20*/ detail: kotlin.Int? = ..., /*21*/ bubbles: kotlin.Boolean? = ..., /*22*/ cancelable: kotlin.Boolean? = ..., /*23*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.KeyboardEventInit
-// "region" argument was missing because of a parser bug [2]
-@kotlin.internal.InlineOnly public inline fun MouseEventInit(/*0*/ screenX: kotlin.Int? = ..., /*1*/ screenY: kotlin.Int? = ..., /*2*/ clientX: kotlin.Int? = ..., /*3*/ clientY: kotlin.Int? = ..., /*4*/ button: kotlin.Short? = ..., /*5*/ buttons: kotlin.Short? = ..., /*6*/ relatedTarget: org.w3c.dom.events.EventTarget? = ..., /*7*/ region: kotlin.String? = ..., /*8*/ ctrlKey: kotlin.Boolean? = ..., /*9*/ shiftKey: kotlin.Boolean? = ..., /*10*/ altKey: kotlin.Boolean? = ..., /*11*/ metaKey: kotlin.Boolean? = ..., /*12*/ modifierAltGraph: kotlin.Boolean? = ..., /*13*/ modifierCapsLock: kotlin.Boolean? = ..., /*14*/ modifierFn: kotlin.Boolean? = ..., /*15*/ modifierFnLock: kotlin.Boolean? = ..., /*16*/ modifierHyper: kotlin.Boolean? = ..., /*17*/ modifierNumLock: kotlin.Boolean? = ..., /*18*/ modifierScrollLock: kotlin.Boolean? = ..., /*19*/ modifierSuper: kotlin.Boolean? = ..., /*20*/ modifierSymbol: kotlin.Boolean? = ..., /*21*/ modifierSymbolLock: kotlin.Boolean? = ..., /*22*/ view: org.w3c.dom.Window? = ..., /*23*/ detail: kotlin.Int? = ..., /*24*/ bubbles: kotlin.Boolean? = ..., /*25*/ cancelable: kotlin.Boolean? = ..., /*26*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.MouseEventInit
+@kotlin.internal.InlineOnly public inline fun MouseEventInit(/*0*/ screenX: kotlin.Int? = ..., /*1*/ screenY: kotlin.Int? = ..., /*2*/ clientX: kotlin.Int? = ..., /*3*/ clientY: kotlin.Int? = ..., /*4*/ button: kotlin.Short? = ..., /*5*/ buttons: kotlin.Short? = ..., /*6*/ relatedTarget: org.w3c.dom.events.EventTarget? = ..., /*7*/ ctrlKey: kotlin.Boolean? = ..., /*8*/ shiftKey: kotlin.Boolean? = ..., /*9*/ altKey: kotlin.Boolean? = ..., /*10*/ metaKey: kotlin.Boolean? = ..., /*11*/ modifierAltGraph: kotlin.Boolean? = ..., /*12*/ modifierCapsLock: kotlin.Boolean? = ..., /*13*/ modifierFn: kotlin.Boolean? = ..., /*14*/ modifierFnLock: kotlin.Boolean? = ..., /*15*/ modifierHyper: kotlin.Boolean? = ..., /*16*/ modifierNumLock: kotlin.Boolean? = ..., /*17*/ modifierScrollLock: kotlin.Boolean? = ..., /*18*/ modifierSuper: kotlin.Boolean? = ..., /*19*/ modifierSymbol: kotlin.Boolean? = ..., /*20*/ modifierSymbolLock: kotlin.Boolean? = ..., /*21*/ view: org.w3c.dom.Window? = ..., /*22*/ detail: kotlin.Int? = ..., /*23*/ bubbles: kotlin.Boolean? = ..., /*24*/ cancelable: kotlin.Boolean? = ..., /*25*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.MouseEventInit
 @kotlin.internal.InlineOnly public inline fun UIEventInit(/*0*/ view: org.w3c.dom.Window? = ..., /*1*/ detail: kotlin.Int? = ..., /*2*/ bubbles: kotlin.Boolean? = ..., /*3*/ cancelable: kotlin.Boolean? = ..., /*4*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.UIEventInit
-// "region" argument was missing because of a parser bug [2]
-@kotlin.internal.InlineOnly public inline fun WheelEventInit(/*0*/ deltaX: kotlin.Double? = ..., /*1*/ deltaY: kotlin.Double? = ..., /*2*/ deltaZ: kotlin.Double? = ..., /*3*/ deltaMode: kotlin.Int? = ..., /*4*/ screenX: kotlin.Int? = ..., /*5*/ screenY: kotlin.Int? = ..., /*6*/ clientX: kotlin.Int? = ..., /*7*/ clientY: kotlin.Int? = ..., /*8*/ button: kotlin.Short? = ..., /*9*/ buttons: kotlin.Short? = ..., /*10*/ relatedTarget: org.w3c.dom.events.EventTarget? = ..., /*11*/ region: kotlin.String? = ..., /*12*/ ctrlKey: kotlin.Boolean? = ..., /*13*/ shiftKey: kotlin.Boolean? = ..., /*14*/ altKey: kotlin.Boolean? = ..., /*15*/ metaKey: kotlin.Boolean? = ..., /*16*/ modifierAltGraph: kotlin.Boolean? = ..., /*17*/ modifierCapsLock: kotlin.Boolean? = ..., /*18*/ modifierFn: kotlin.Boolean? = ..., /*19*/ modifierFnLock: kotlin.Boolean? = ..., /*20*/ modifierHyper: kotlin.Boolean? = ..., /*21*/ modifierNumLock: kotlin.Boolean? = ..., /*22*/ modifierScrollLock: kotlin.Boolean? = ..., /*23*/ modifierSuper: kotlin.Boolean? = ..., /*24*/ modifierSymbol: kotlin.Boolean? = ..., /*25*/ modifierSymbolLock: kotlin.Boolean? = ..., /*26*/ view: org.w3c.dom.Window? = ..., /*27*/ detail: kotlin.Int? = ..., /*28*/ bubbles: kotlin.Boolean? = ..., /*29*/ cancelable: kotlin.Boolean? = ..., /*30*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.WheelEventInit
+@kotlin.internal.InlineOnly public inline fun WheelEventInit(/*0*/ deltaX: kotlin.Double? = ..., /*1*/ deltaY: kotlin.Double? = ..., /*2*/ deltaZ: kotlin.Double? = ..., /*3*/ deltaMode: kotlin.Int? = ..., /*4*/ screenX: kotlin.Int? = ..., /*5*/ screenY: kotlin.Int? = ..., /*6*/ clientX: kotlin.Int? = ..., /*7*/ clientY: kotlin.Int? = ..., /*8*/ button: kotlin.Short? = ..., /*9*/ buttons: kotlin.Short? = ..., /*10*/ relatedTarget: org.w3c.dom.events.EventTarget? = ..., /*11*/ ctrlKey: kotlin.Boolean? = ..., /*12*/ shiftKey: kotlin.Boolean? = ..., /*13*/ altKey: kotlin.Boolean? = ..., /*14*/ metaKey: kotlin.Boolean? = ..., /*15*/ modifierAltGraph: kotlin.Boolean? = ..., /*16*/ modifierCapsLock: kotlin.Boolean? = ..., /*17*/ modifierFn: kotlin.Boolean? = ..., /*18*/ modifierFnLock: kotlin.Boolean? = ..., /*19*/ modifierHyper: kotlin.Boolean? = ..., /*20*/ modifierNumLock: kotlin.Boolean? = ..., /*21*/ modifierScrollLock: kotlin.Boolean? = ..., /*22*/ modifierSuper: kotlin.Boolean? = ..., /*23*/ modifierSymbol: kotlin.Boolean? = ..., /*24*/ modifierSymbolLock: kotlin.Boolean? = ..., /*25*/ view: org.w3c.dom.Window? = ..., /*26*/ detail: kotlin.Int? = ..., /*27*/ bubbles: kotlin.Boolean? = ..., /*28*/ cancelable: kotlin.Boolean? = ..., /*29*/ composed: kotlin.Boolean? = ...): org.w3c.dom.events.WheelEventInit
 
 public open external class CompositionEvent : org.w3c.dom.events.UIEvent {
     /*primary*/ public constructor CompositionEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.events.CompositionEventInit = ...)
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val composed: kotlin.Boolean
@@ -31,24 +32,30 @@ public open external class CompositionEvent : org.w3c.dom.events.UIEvent {
         public open override /*1*/ /*fake_override*/ fun <get-eventPhase>(): kotlin.Short
     public open override /*1*/ /*fake_override*/ val isTrusted: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -93,6 +100,9 @@ public open external class Event {
     /*primary*/ public constructor Event(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.EventInit = ...)
     public open val bubbles: kotlin.Boolean
         public open fun <get-bubbles>(): kotlin.Boolean
+    public final var cancelBubble: kotlin.Boolean
+        public final fun <get-cancelBubble>(): kotlin.Boolean
+        public final fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open val cancelable: kotlin.Boolean
         public open fun <get-cancelable>(): kotlin.Boolean
     public open val composed: kotlin.Boolean
@@ -105,16 +115,21 @@ public open external class Event {
         public open fun <get-eventPhase>(): kotlin.Short
     public open val isTrusted: kotlin.Boolean
         public open fun <get-isTrusted>(): kotlin.Boolean
+    public final var returnValue: kotlin.Boolean
+        public final fun <get-returnValue>(): kotlin.Boolean
+        public final fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public open val srcElement: org.w3c.dom.events.EventTarget?
+        public open fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open val target: org.w3c.dom.events.EventTarget?
         public open fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open val timeStamp: kotlin.Number
-        public open fun <get-timeStamp>(): kotlin.Number
+    public open val timeStamp: kotlin.Double
+        public open fun <get-timeStamp>(): kotlin.Double
     public open val type: kotlin.String
         public open fun <get-type>(): kotlin.String
     public final fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final fun preventDefault(): kotlin.Unit
     public final fun stopImmediatePropagation(): kotlin.Unit
     public final fun stopPropagation(): kotlin.Unit
@@ -206,7 +221,7 @@ public external interface EventModifierInit : org.w3c.dom.events.UIEventInit {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public abstract external class EventTarget {
+public open external class EventTarget {
     /*primary*/ public constructor EventTarget()
     public final fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
@@ -222,6 +237,9 @@ public open external class FocusEvent : org.w3c.dom.events.UIEvent {
     /*primary*/ public constructor FocusEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.events.FocusEventInit = ...)
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val composed: kotlin.Boolean
@@ -238,24 +256,30 @@ public open external class FocusEvent : org.w3c.dom.events.UIEvent {
         public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
     public open val relatedTarget: org.w3c.dom.events.EventTarget?
         public open fun <get-relatedTarget>(): org.w3c.dom.events.EventTarget?
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -300,42 +324,53 @@ public open external class InputEvent : org.w3c.dom.events.UIEvent {
     /*primary*/ public constructor InputEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.events.InputEventInit = ...)
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val composed: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-composed>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val currentTarget: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-currentTarget>(): org.w3c.dom.events.EventTarget?
-    public open val data: kotlin.String
-        public open fun <get-data>(): kotlin.String
+    public open val data: kotlin.String?
+        public open fun <get-data>(): kotlin.String?
     public open override /*1*/ /*fake_override*/ val defaultPrevented: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-defaultPrevented>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val detail: kotlin.Int
         public open override /*1*/ /*fake_override*/ fun <get-detail>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ val eventPhase: kotlin.Short
         public open override /*1*/ /*fake_override*/ fun <get-eventPhase>(): kotlin.Short
+    public open val inputType: kotlin.String
+        public open fun <get-inputType>(): kotlin.String
     public open val isComposing: kotlin.Boolean
         public open fun <get-isComposing>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val isTrusted: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -368,6 +403,9 @@ public external interface InputEventInit : org.w3c.dom.events.UIEventInit {
     public open override /*1*/ /*fake_override*/ var detail: kotlin.Int?
         public open override /*1*/ /*fake_override*/ fun <get-detail>(): kotlin.Int?
         public open override /*1*/ /*fake_override*/ fun <set-detail>(/*0*/ value: kotlin.Int?): kotlin.Unit
+    public open var inputType: kotlin.String?
+        public open fun <get-inputType>(): kotlin.String?
+        public open fun <set-inputType>(/*0*/ value: kotlin.String?): kotlin.Unit
     public open var isComposing: kotlin.Boolean?
         public open fun <get-isComposing>(): kotlin.Boolean?
         public open fun <set-isComposing>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
@@ -385,6 +423,9 @@ public open external class KeyboardEvent : org.w3c.dom.events.UIEvent {
         public open fun <get-altKey>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open val charCode: kotlin.Int
@@ -417,23 +458,28 @@ public open external class KeyboardEvent : org.w3c.dom.events.UIEvent {
         public open fun <get-metaKey>(): kotlin.Boolean
     public open val repeat: kotlin.Boolean
         public open fun <get-repeat>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open val shiftKey: kotlin.Boolean
         public open fun <get-shiftKey>(): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
-    public open val which: kotlin.Int
-        public open fun <get-which>(): kotlin.Int
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final fun getModifierState(/*0*/ keyArg: kotlin.String): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
@@ -441,7 +487,6 @@ public open external class KeyboardEvent : org.w3c.dom.events.UIEvent {
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        // we should add static members from parents to emulate inheritance [1]
         public final val AT_TARGET: kotlin.Short
             public final fun <get-AT_TARGET>(): kotlin.Short
         public final val BUBBLING_PHASE: kotlin.Short
@@ -456,7 +501,6 @@ public open external class KeyboardEvent : org.w3c.dom.events.UIEvent {
             public final fun <get-DOM_KEY_LOCATION_RIGHT>(): kotlin.Int
         public final val DOM_KEY_LOCATION_STANDARD: kotlin.Int
             public final fun <get-DOM_KEY_LOCATION_STANDARD>(): kotlin.Int
-        // we should add static members from parents to emulate inheritance [1]
         public final val NONE: kotlin.Short
             public final fun <get-NONE>(): kotlin.Short
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
@@ -543,7 +587,7 @@ public external interface KeyboardEventInit : org.w3c.dom.events.EventModifierIn
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public open external class MouseEvent : org.w3c.dom.events.UIEvent, org.w3c.dom.UnionElementOrMouseEvent {
+public open external class MouseEvent : org.w3c.dom.events.UIEvent {
     /*primary*/ public constructor MouseEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.events.MouseEventInit = ...)
     public open val altKey: kotlin.Boolean
         public open fun <get-altKey>(): kotlin.Boolean
@@ -553,6 +597,9 @@ public open external class MouseEvent : org.w3c.dom.events.UIEvent, org.w3c.dom.
         public open fun <get-button>(): kotlin.Short
     public open val buttons: kotlin.Short
         public open fun <get-buttons>(): kotlin.Short
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open val clientX: kotlin.Int
@@ -583,41 +630,43 @@ public open external class MouseEvent : org.w3c.dom.events.UIEvent, org.w3c.dom.
         public open fun <get-pageX>(): kotlin.Double
     public open val pageY: kotlin.Double
         public open fun <get-pageY>(): kotlin.Double
-    public open val region: kotlin.String?
-        public open fun <get-region>(): kotlin.String?
     public open val relatedTarget: org.w3c.dom.events.EventTarget?
         public open fun <get-relatedTarget>(): org.w3c.dom.events.EventTarget?
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open val screenX: kotlin.Int
         public open fun <get-screenX>(): kotlin.Int
     public open val screenY: kotlin.Int
         public open fun <get-screenY>(): kotlin.Int
     public open val shiftKey: kotlin.Boolean
         public open fun <get-shiftKey>(): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
-    // these properties were hardcoded to be commented out because they were causing compile-time conflicts
-    // now, as I believe, they are safe to use [10]
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public open val x: kotlin.Double
         public open fun <get-x>(): kotlin.Double
     public open val y: kotlin.Double
         public open fun <get-y>(): kotlin.Double
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
-    public open override /*2*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final fun getModifierState(/*0*/ keyArg: kotlin.String): kotlin.Boolean
-    public open override /*2*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
-    public open override /*2*/ /*fake_override*/ fun toString(): kotlin.String
+    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -698,10 +747,6 @@ public external interface MouseEventInit : org.w3c.dom.events.EventModifierInit 
     public open override /*1*/ /*fake_override*/ var modifierSymbolLock: kotlin.Boolean?
         public open override /*1*/ /*fake_override*/ fun <get-modifierSymbolLock>(): kotlin.Boolean?
         public open override /*1*/ /*fake_override*/ fun <set-modifierSymbolLock>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    // "region" property was missing because of a parser bug [2]
-    public open var region: kotlin.String?
-        public open fun <get-region>(): kotlin.String?
-        public open fun <set-region>(/*0*/ value: kotlin.String?): kotlin.Unit
     public open var relatedTarget: org.w3c.dom.events.EventTarget?
         public open fun <get-relatedTarget>(): org.w3c.dom.events.EventTarget?
         public open fun <set-relatedTarget>(/*0*/ value: org.w3c.dom.events.EventTarget?): kotlin.Unit
@@ -726,6 +771,9 @@ public open external class UIEvent : org.w3c.dom.events.Event {
     /*primary*/ public constructor UIEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.events.UIEventInit = ...)
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val composed: kotlin.Boolean
@@ -740,24 +788,30 @@ public open external class UIEvent : org.w3c.dom.events.Event {
         public open override /*1*/ /*fake_override*/ fun <get-eventPhase>(): kotlin.Short
     public open override /*1*/ /*fake_override*/ val isTrusted: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open val view: org.w3c.dom.Window?
         public open fun <get-view>(): org.w3c.dom.Window?
+    public open val which: kotlin.Int
+        public open fun <get-which>(): kotlin.Int
     public final override /*1*/ /*fake_override*/ fun composedPath(): kotlin.Array<org.w3c.dom.events.EventTarget>
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -805,6 +859,9 @@ public open external class WheelEvent : org.w3c.dom.events.MouseEvent {
         public open override /*1*/ /*fake_override*/ fun <get-button>(): kotlin.Short
     public open override /*1*/ /*fake_override*/ val buttons: kotlin.Short
         public open override /*1*/ /*fake_override*/ fun <get-buttons>(): kotlin.Short
+    public final override /*1*/ /*fake_override*/ var cancelBubble: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-cancelBubble>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-cancelBubble>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-cancelable>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val clientX: kotlin.Int
@@ -843,26 +900,29 @@ public open external class WheelEvent : org.w3c.dom.events.MouseEvent {
         public open override /*1*/ /*fake_override*/ fun <get-pageX>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val pageY: kotlin.Double
         public open override /*1*/ /*fake_override*/ fun <get-pageY>(): kotlin.Double
-    public open override /*1*/ /*fake_override*/ val region: kotlin.String?
-        public open override /*1*/ /*fake_override*/ fun <get-region>(): kotlin.String?
     public open override /*1*/ /*fake_override*/ val relatedTarget: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-relatedTarget>(): org.w3c.dom.events.EventTarget?
+    public final override /*1*/ /*fake_override*/ var returnValue: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-returnValue>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-returnValue>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val screenX: kotlin.Int
         public open override /*1*/ /*fake_override*/ fun <get-screenX>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ val screenY: kotlin.Int
         public open override /*1*/ /*fake_override*/ fun <get-screenY>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ val shiftKey: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-shiftKey>(): kotlin.Boolean
+    public open override /*1*/ /*fake_override*/ val srcElement: org.w3c.dom.events.EventTarget?
+        public open override /*1*/ /*fake_override*/ fun <get-srcElement>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
-    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
-        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
+    public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Double
+        public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-type>(): kotlin.String
     public open override /*1*/ /*fake_override*/ val view: org.w3c.dom.Window?
         public open override /*1*/ /*fake_override*/ fun <get-view>(): org.w3c.dom.Window?
-    // these properties were hardcoded to be commented out because they were causing compile-time conflicts
-    // now, as I believe, they are safe to use [10]
+    public open override /*1*/ /*fake_override*/ val which: kotlin.Int
+        public open override /*1*/ /*fake_override*/ fun <get-which>(): kotlin.Int
     public open override /*1*/ /*fake_override*/ val x: kotlin.Double
         public open override /*1*/ /*fake_override*/ fun <get-x>(): kotlin.Double
     public open override /*1*/ /*fake_override*/ val y: kotlin.Double
@@ -871,7 +931,7 @@ public open external class WheelEvent : org.w3c.dom.events.MouseEvent {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final override /*1*/ /*fake_override*/ fun getModifierState(/*0*/ keyArg: kotlin.String): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean, /*2*/ cancelable: kotlin.Boolean): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ fun initEvent(/*0*/ type: kotlin.String, /*1*/ bubbles: kotlin.Boolean = ..., /*2*/ cancelable: kotlin.Boolean = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun preventDefault(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopImmediatePropagation(): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
@@ -879,7 +939,6 @@ public open external class WheelEvent : org.w3c.dom.events.MouseEvent {
 
     public companion object Companion {
         /*primary*/ private constructor Companion()
-        // we should add static members from parents to emulate inheritance [1]
         public final val AT_TARGET: kotlin.Short
             public final fun <get-AT_TARGET>(): kotlin.Short
         public final val BUBBLING_PHASE: kotlin.Short
@@ -892,7 +951,6 @@ public open external class WheelEvent : org.w3c.dom.events.MouseEvent {
             public final fun <get-DOM_DELTA_PAGE>(): kotlin.Int
         public final val DOM_DELTA_PIXEL: kotlin.Int
             public final fun <get-DOM_DELTA_PIXEL>(): kotlin.Int
-        // we should add static members from parents to emulate inheritance [1]
         public final val NONE: kotlin.Short
             public final fun <get-NONE>(): kotlin.Short
         public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
@@ -977,10 +1035,6 @@ public external interface WheelEventInit : org.w3c.dom.events.MouseEventInit {
     public open override /*1*/ /*fake_override*/ var modifierSymbolLock: kotlin.Boolean?
         public open override /*1*/ /*fake_override*/ fun <get-modifierSymbolLock>(): kotlin.Boolean?
         public open override /*1*/ /*fake_override*/ fun <set-modifierSymbolLock>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    // "region" property was missing because of a parser bug [2]
-    public open override /*1*/ /*fake_override*/ var region: kotlin.String?
-        public open override /*1*/ /*fake_override*/ fun <get-region>(): kotlin.String?
-        public open override /*1*/ /*fake_override*/ fun <set-region>(/*0*/ value: kotlin.String?): kotlin.Unit
     public open override /*1*/ /*fake_override*/ var relatedTarget: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-relatedTarget>(): org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <set-relatedTarget>(/*0*/ value: org.w3c.dom.events.EventTarget?): kotlin.Unit

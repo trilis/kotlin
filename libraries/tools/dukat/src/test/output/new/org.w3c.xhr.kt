@@ -12,13 +12,12 @@ public val org.w3c.xhr.XMLHttpRequestResponseType.Companion.JSON: org.w3c.xhr.XM
     public inline fun org.w3c.xhr.XMLHttpRequestResponseType.Companion.<get-JSON>(): org.w3c.xhr.XMLHttpRequestResponseType
 public val org.w3c.xhr.XMLHttpRequestResponseType.Companion.TEXT: org.w3c.xhr.XMLHttpRequestResponseType
     public inline fun org.w3c.xhr.XMLHttpRequestResponseType.Companion.<get-TEXT>(): org.w3c.xhr.XMLHttpRequestResponseType
-// "unsigned long long" should be converted to Number to allow to cast it to ULong [7]
 @kotlin.internal.InlineOnly public inline fun ProgressEventInit(/*0*/ lengthComputable: kotlin.Boolean? = ..., /*1*/ loaded: kotlin.Number? = ..., /*2*/ total: kotlin.Number? = ..., /*3*/ bubbles: kotlin.Boolean? = ..., /*4*/ cancelable: kotlin.Boolean? = ..., /*5*/ composed: kotlin.Boolean? = ...): org.w3c.xhr.ProgressEventInit
 
 public open external class FormData {
     /*primary*/ public constructor FormData(/*0*/ form: org.w3c.dom.HTMLFormElement = ...)
     public final fun append(/*0*/ name: kotlin.String, /*1*/ value: kotlin.String): kotlin.Unit
-    public final fun append(/*0*/ name: kotlin.String, /*1*/ value: org.w3c.files.Blob, /*2*/ filename: kotlin.String = ...): kotlin.Unit
+    public final fun append(/*0*/ name: kotlin.String, /*1*/ blobValue: org.w3c.files.Blob, /*2*/ filename: kotlin.String = ...): kotlin.Unit
     public final fun delete(/*0*/ name: kotlin.String): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public final fun get(/*0*/ name: kotlin.String): dynamic
@@ -26,7 +25,7 @@ public open external class FormData {
     public final fun has(/*0*/ name: kotlin.String): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
     public final fun set(/*0*/ name: kotlin.String, /*1*/ value: kotlin.String): kotlin.Unit
-    public final fun set(/*0*/ name: kotlin.String, /*1*/ value: org.w3c.files.Blob, /*2*/ filename: kotlin.String = ...): kotlin.Unit
+    public final fun set(/*0*/ name: kotlin.String, /*1*/ blobValue: org.w3c.files.Blob, /*2*/ filename: kotlin.String = ...): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
@@ -48,14 +47,12 @@ public open external class ProgressEvent : org.w3c.dom.events.Event {
         public open override /*1*/ /*fake_override*/ fun <get-isTrusted>(): kotlin.Boolean
     public open val lengthComputable: kotlin.Boolean
         public open fun <get-lengthComputable>(): kotlin.Boolean
-    // "unsigned long long" should be converted to Number to allow to cast it to ULong [7]
     public open val loaded: kotlin.Number
         public open fun <get-loaded>(): kotlin.Number
     public open override /*1*/ /*fake_override*/ val target: org.w3c.dom.events.EventTarget?
         public open override /*1*/ /*fake_override*/ fun <get-target>(): org.w3c.dom.events.EventTarget?
     public open override /*1*/ /*fake_override*/ val timeStamp: kotlin.Number
         public open override /*1*/ /*fake_override*/ fun <get-timeStamp>(): kotlin.Number
-    // "unsigned long long" should be converted to Number to allow to cast it to ULong [7]
     public open val total: kotlin.Number
         public open fun <get-total>(): kotlin.Number
     public open override /*1*/ /*fake_override*/ val type: kotlin.String
@@ -69,7 +66,6 @@ public open external class ProgressEvent : org.w3c.dom.events.Event {
     public final override /*1*/ /*fake_override*/ fun stopPropagation(): kotlin.Unit
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 
-    // we should add static members from parents to emulate inheritance [1]
     public companion object Companion {
         /*primary*/ private constructor Companion()
         public final val AT_TARGET: kotlin.Short
@@ -99,7 +95,6 @@ public external interface ProgressEventInit : org.w3c.dom.EventInit {
     public open var lengthComputable: kotlin.Boolean?
         public open fun <get-lengthComputable>(): kotlin.Boolean?
         public open fun <set-lengthComputable>(/*0*/ value: kotlin.Boolean?): kotlin.Unit
-    // "unsigned long long" should be converted to Number to allow to cast it to ULong [7]
     public open var loaded: kotlin.Number?
         public open fun <get-loaded>(): kotlin.Number?
         public open fun <set-loaded>(/*0*/ value: kotlin.Number?): kotlin.Unit
@@ -113,30 +108,30 @@ public external interface ProgressEventInit : org.w3c.dom.EventInit {
 
 public open external class XMLHttpRequest : org.w3c.xhr.XMLHttpRequestEventTarget {
     /*primary*/ public constructor XMLHttpRequest()
-    public open override /*1*/ /*fake_override*/ var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onload: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onload: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
     public final var onreadystatechange: ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <get-onreadystatechange>(): ((org.w3c.dom.events.Event) -> dynamic)?
         public final fun <set-onreadystatechange>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public open val readyState: kotlin.Short
         public open fun <get-readyState>(): kotlin.Short
     public open val response: kotlin.Any?
@@ -197,29 +192,29 @@ public open external class XMLHttpRequest : org.w3c.xhr.XMLHttpRequestEventTarge
     }
 }
 
-public abstract external class XMLHttpRequestEventTarget : org.w3c.dom.events.EventTarget {
+public open external class XMLHttpRequestEventTarget : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor XMLHttpRequestEventTarget()
-    public open var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onload: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
-    public open var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
-    public open var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onload: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
@@ -230,7 +225,6 @@ public abstract external class XMLHttpRequestEventTarget : org.w3c.dom.events.Ev
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-// file-level suppress changed to declaration-level
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface XMLHttpRequestResponseType {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -244,29 +238,29 @@ public abstract external class XMLHttpRequestEventTarget : org.w3c.dom.events.Ev
     }
 }
 
-public abstract external class XMLHttpRequestUpload : org.w3c.xhr.XMLHttpRequestEventTarget {
+public open external class XMLHttpRequestUpload : org.w3c.xhr.XMLHttpRequestEventTarget {
     /*primary*/ public constructor XMLHttpRequestUpload()
-    public open override /*1*/ /*fake_override*/ var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onload: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
-    public open override /*1*/ /*fake_override*/ var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
-        public open override /*1*/ /*fake_override*/ fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onabort: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onabort>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onabort>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onerror: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onerror>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onerror>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onload: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onload>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onload>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onloadend: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onloadend>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onloadend>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onloadstart: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onloadstart>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onloadstart>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var onprogress: ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-onprogress>(): ((org.w3c.xhr.ProgressEvent) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-onprogress>(/*0*/ <set-?>: ((org.w3c.xhr.ProgressEvent) -> dynamic)?): kotlin.Unit
+    public final override /*1*/ /*fake_override*/ var ontimeout: ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <get-ontimeout>(): ((org.w3c.dom.events.Event) -> dynamic)?
+        public final override /*1*/ /*fake_override*/ fun <set-ontimeout>(/*0*/ <set-?>: ((org.w3c.dom.events.Event) -> dynamic)?): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: ((org.w3c.dom.events.Event) -> kotlin.Unit)?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun addEventListener(/*0*/ type: kotlin.String, /*1*/ callback: org.w3c.dom.events.EventListener?, /*2*/ options: dynamic = ...): kotlin.Unit
     public final override /*1*/ /*fake_override*/ fun dispatchEvent(/*0*/ event: org.w3c.dom.events.Event): kotlin.Boolean
