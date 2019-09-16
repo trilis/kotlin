@@ -113,6 +113,7 @@ external open class SVGElement : Element {
     var correspondingUseElement: SVGUseElement?
     var dataset: DOMStringMap
     var nonce: String
+    var autofocus: Boolean
     var tabIndex: Int
     fun focus(options: FocusOptions = definedExternally)
     fun blur()

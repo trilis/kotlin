@@ -100,7 +100,6 @@ private fun extractIDLText(rawContent: String, out: Appendable) {
 
 private val urls = listOf(
     "https://raw.githubusercontent.com/whatwg/html-mirror/master/source" to "org.w3c.dom",
-    "https://html.spec.whatwg.org/" to "org.w3c.dom",
     "https://raw.githubusercontent.com/whatwg/dom/master/dom.bs" to "org.w3c.dom",
     "https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html" to "org.w3c.dom",
     "https://www.w3.org/TR/animation-timing/" to "org.w3c.dom",

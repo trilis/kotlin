@@ -186,7 +186,7 @@ inline fun ClientQueryOptions(includeUncontrolled: Boolean? = false, type: Clien
 /**
  * Exposes the JavaScript [ExtendableEvent](https://developer.mozilla.org/en/docs/Web/API/ExtendableEvent) to Kotlin
  */
-external open class ExtendableEvent(type: String, eventInitDict: ExtendableEventInit = definedExternally) : Event {
+external open class ExtendableEvent : Event {
     fun waitUntil(f: Promise<Any?>)
 
     companion object {
@@ -211,7 +211,7 @@ inline fun ExtendableEventInit(bubbles: Boolean? = false, cancelable: Boolean? =
 /**
  * Exposes the JavaScript [FetchEvent](https://developer.mozilla.org/en/docs/Web/API/FetchEvent) to Kotlin
  */
-external open class FetchEvent(type: String, eventInitDict: FetchEventInit) : ExtendableEvent {
+external open class FetchEvent : ExtendableEvent {
     open val request: Request
     open val preloadResponse: Promise<Any?>
     open val clientId: String
@@ -262,7 +262,7 @@ inline fun FetchEventInit(request: Request?, preloadResponse: Promise<Any?>? = u
 /**
  * Exposes the JavaScript [ExtendableMessageEvent](https://developer.mozilla.org/en/docs/Web/API/ExtendableMessageEvent) to Kotlin
  */
-external open class ExtendableMessageEvent(type: String, eventInitDict: ExtendableMessageEventInit = definedExternally) : ExtendableEvent {
+external open class ExtendableMessageEvent : ExtendableEvent {
     open val data: Any?
     open val origin: String
     open val lastEventId: String

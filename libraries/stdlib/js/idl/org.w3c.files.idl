@@ -2,10 +2,10 @@ package org.w3c.files;
 
 
 // Downloaded from https://raw.githubusercontent.com/w3c/FileAPI/gh-pages/index.html
-[Constructor(optional sequence<BlobPart> blobParts,
-             optional BlobPropertyBag options = {}),
- Exposed=(Window,Worker), Serializable]
+[Exposed=(Window,Worker), Serializable]
 interface Blob {
+  constructor(optional sequence<BlobPart> blobParts,
+              optional BlobPropertyBag options = {});
 
   readonly attribute unsigned long long size;
   readonly attribute DOMString type;
@@ -29,11 +29,11 @@ dictionary BlobPropertyBag {
 };
 
 typedef (BufferSource or Blob or USVString) BlobPart;
-[Constructor(sequence<BlobPart> fileBits,
-             USVString fileName,
-             optional FilePropertyBag options = {}),
- Exposed=(Window,Worker), Serializable]
+[Exposed=(Window,Worker), Serializable]
 interface File : Blob {
+  constructor(sequence<BlobPart> fileBits,
+              USVString fileName,
+              optional FilePropertyBag options = {});
   readonly attribute DOMString name;
   readonly attribute long long lastModified;
 };
@@ -46,9 +46,9 @@ interface FileList {
   getter File? item(unsigned long index);
   readonly attribute unsigned long length;
 };
-[Constructor, Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface FileReader: EventTarget {
-
+  constructor();
   // async read methods
   void readAsArrayBuffer(Blob blob);
   void readAsBinaryString(Blob blob);
@@ -77,8 +77,9 @@ interface FileReader: EventTarget {
   attribute EventHandler onerror;
   attribute EventHandler onloadend;
 };
-[Constructor, Exposed=(DedicatedWorker,SharedWorker)]
+[Exposed=(DedicatedWorker,SharedWorker)]
 interface FileReaderSync {
+  constructor();
   // Synchronously return strings
 
   ArrayBuffer readAsArrayBuffer(Blob blob);
@@ -91,10 +92,10 @@ partial interface URL {
   static DOMString createObjectURL((Blob or MediaSource) obj);
   static void revokeObjectURL(DOMString url);
 };
-[Constructor(optional sequence<BlobPart> blobParts,
-             optional BlobPropertyBag options = {}),
- Exposed=(Window,Worker), Serializable]
+[Exposed=(Window,Worker), Serializable]
 interface Blob {
+  constructor(optional sequence<BlobPart> blobParts,
+              optional BlobPropertyBag options = {});
 
   readonly attribute unsigned long long size;
   readonly attribute DOMString type;
@@ -119,11 +120,11 @@ dictionary BlobPropertyBag {
 
 typedef (BufferSource or Blob or USVString) BlobPart;
 
-[Constructor(sequence<BlobPart> fileBits,
-             USVString fileName,
-             optional FilePropertyBag options = {}),
- Exposed=(Window,Worker), Serializable]
+[Exposed=(Window,Worker), Serializable]
 interface File : Blob {
+  constructor(sequence<BlobPart> fileBits,
+              USVString fileName,
+              optional FilePropertyBag options = {});
   readonly attribute DOMString name;
   readonly attribute long long lastModified;
 };
@@ -138,9 +139,9 @@ interface FileList {
   readonly attribute unsigned long length;
 };
 
-[Constructor, Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface FileReader: EventTarget {
-
+  constructor();
   // async read methods
   void readAsArrayBuffer(Blob blob);
   void readAsBinaryString(Blob blob);
@@ -170,8 +171,9 @@ interface FileReader: EventTarget {
   attribute EventHandler onloadend;
 };
 
-[Constructor, Exposed=(DedicatedWorker,SharedWorker)]
+[Exposed=(DedicatedWorker,SharedWorker)]
 interface FileReaderSync {
+  constructor();
   // Synchronously return strings
 
   ArrayBuffer readAsArrayBuffer(Blob blob);

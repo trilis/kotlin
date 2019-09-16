@@ -18,6 +18,9 @@ public open external class SVGAElement : org.w3c.dom.svg.SVGGraphicsElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -743,6 +746,9 @@ public open external class SVGCircleElement : org.w3c.dom.svg.SVGGeometryElement
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -1227,6 +1233,9 @@ public open external class SVGDefsElement : org.w3c.dom.svg.SVGGraphicsElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -1699,6 +1708,9 @@ public open external class SVGDescElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -2160,6 +2172,9 @@ public open external class SVGElement : org.w3c.dom.Element {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final var autofocus: kotlin.Boolean
+        public final fun <get-autofocus>(): kotlin.Boolean
+        public final fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -2621,6 +2636,9 @@ public open external class SVGEllipseElement : org.w3c.dom.svg.SVGGeometryElemen
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -3107,6 +3125,9 @@ public open external class SVGForeignObjectElement : org.w3c.dom.svg.SVGGraphics
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -3587,6 +3608,9 @@ public open external class SVGGElement : org.w3c.dom.svg.SVGGraphicsElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -4059,6 +4083,9 @@ public open external class SVGGeometryElement : org.w3c.dom.svg.SVGGraphicsEleme
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -4537,6 +4564,9 @@ public open external class SVGGradientElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -5015,6 +5045,9 @@ public open external class SVGGraphicsElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -5487,6 +5520,9 @@ public open external class SVGImageElement : org.w3c.dom.svg.SVGGraphicsElement,
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -6042,6 +6078,9 @@ public open external class SVGLineElement : org.w3c.dom.svg.SVGGeometryElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -6528,6 +6567,9 @@ public open external class SVGLinearGradientElement : org.w3c.dom.svg.SVGGradien
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -7014,6 +7056,9 @@ public open external class SVGMarkerElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -7512,6 +7557,9 @@ public open external class SVGMetadataElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -8001,6 +8049,9 @@ public open external class SVGPathElement : org.w3c.dom.svg.SVGGeometryElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -8479,6 +8530,9 @@ public open external class SVGPatternElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -8984,6 +9038,9 @@ public open external class SVGPolygonElement : org.w3c.dom.svg.SVGGeometryElemen
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -9468,6 +9525,9 @@ public open external class SVGPolylineElement : org.w3c.dom.svg.SVGGeometryEleme
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -9997,6 +10057,9 @@ public open external class SVGRadialGradientElement : org.w3c.dom.svg.SVGGradien
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -10487,6 +10550,9 @@ public open external class SVGRectElement : org.w3c.dom.svg.SVGGeometryElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -10977,6 +11043,9 @@ public open external class SVGSVGElement : org.w3c.dom.svg.SVGGraphicsElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -11543,6 +11612,9 @@ public open external class SVGScriptElement : org.w3c.dom.svg.SVGElement, org.w3
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -12013,6 +12085,9 @@ public open external class SVGStopElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -12494,6 +12569,9 @@ public open external class SVGStyleElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -12967,6 +13045,9 @@ public open external class SVGSwitchElement : org.w3c.dom.svg.SVGGraphicsElement
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -13439,6 +13520,9 @@ public open external class SVGSymbolElement : org.w3c.dom.svg.SVGGraphicsElement
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -13917,6 +14001,9 @@ public open external class SVGTSpanElement : org.w3c.dom.svg.SVGTextPositioningE
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -14418,6 +14505,9 @@ public open external class SVGTextContentElement : org.w3c.dom.svg.SVGGraphicsEl
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -14909,6 +14999,9 @@ public open external class SVGTextElement : org.w3c.dom.svg.SVGTextPositioningEl
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -15410,6 +15503,9 @@ public open external class SVGTextPathElement : org.w3c.dom.svg.SVGTextContentEl
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -15922,6 +16018,9 @@ public open external class SVGTextPositioningElement : org.w3c.dom.svg.SVGTextCo
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -16423,6 +16522,9 @@ public open external class SVGTitleElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -16964,6 +17066,9 @@ public open external class SVGUnknownElement : org.w3c.dom.svg.SVGGraphicsElemen
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -17438,6 +17543,9 @@ public open external class SVGUseElement : org.w3c.dom.svg.SVGGraphicsElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int
@@ -18042,6 +18150,9 @@ public open external class SVGViewElement : org.w3c.dom.svg.SVGElement {
         public open override /*1*/ /*fake_override*/ fun <get-assignedSlot>(): org.w3c.dom.HTMLSlotElement?
     public open override /*1*/ /*fake_override*/ val attributes: org.w3c.dom.NamedNodeMap
         public open override /*1*/ /*fake_override*/ fun <get-attributes>(): org.w3c.dom.NamedNodeMap
+    public final override /*1*/ /*fake_override*/ var autofocus: kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <get-autofocus>(): kotlin.Boolean
+        public final override /*1*/ /*fake_override*/ fun <set-autofocus>(/*0*/ <set-?>: kotlin.Boolean): kotlin.Unit
     public open override /*1*/ /*fake_override*/ val baseURI: kotlin.String
         public open override /*1*/ /*fake_override*/ fun <get-baseURI>(): kotlin.String
     public abstract override /*1*/ /*fake_override*/ val childElementCount: kotlin.Int

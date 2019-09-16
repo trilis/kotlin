@@ -30,9 +30,7 @@ import org.w3c.xhr.*
 /**
  * Exposes the JavaScript [MediaStream](https://developer.mozilla.org/en/docs/Web/API/MediaStream) to Kotlin
  */
-external open class MediaStream() : EventTarget {
-    constructor(stream: MediaStream)
-    constructor(tracks: Array<MediaStreamTrack>)
+external open class MediaStream : EventTarget {
     open val id: String
     open val active: Boolean
     var onaddtrack: ((MediaStreamTrackEvent) -> dynamic)?
@@ -383,7 +381,7 @@ inline fun MediaTrackSettings(width: Int? = undefined, height: Int? = undefined,
 /**
  * Exposes the JavaScript [MediaStreamTrackEvent](https://developer.mozilla.org/en/docs/Web/API/MediaStreamTrackEvent) to Kotlin
  */
-external open class MediaStreamTrackEvent(type: String, eventInitDict: MediaStreamTrackEventInit) : Event {
+external open class MediaStreamTrackEvent : Event {
     open val track: MediaStreamTrack
 
     companion object {

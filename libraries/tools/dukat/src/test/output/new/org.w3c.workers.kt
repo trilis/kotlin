@@ -138,7 +138,7 @@ public abstract external class Clients {
 }
 
 public open external class ExtendableEvent : org.w3c.dom.events.Event {
-    /*primary*/ public constructor ExtendableEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.workers.ExtendableEventInit = ...)
+    /*primary*/ public constructor ExtendableEvent()
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
@@ -201,7 +201,7 @@ public external interface ExtendableEventInit : org.w3c.dom.EventInit {
 }
 
 public open external class ExtendableMessageEvent : org.w3c.workers.ExtendableEvent {
-    /*primary*/ public constructor ExtendableMessageEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.workers.ExtendableMessageEventInit = ...)
+    /*primary*/ public constructor ExtendableMessageEvent()
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
@@ -289,7 +289,7 @@ public external interface ExtendableMessageEventInit : org.w3c.workers.Extendabl
 }
 
 public open external class FetchEvent : org.w3c.workers.ExtendableEvent {
-    /*primary*/ public constructor FetchEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.workers.FetchEventInit)
+    /*primary*/ public constructor FetchEvent()
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean

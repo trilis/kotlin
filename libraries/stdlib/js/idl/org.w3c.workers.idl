@@ -144,15 +144,17 @@ enum ClientType {
   "sharedworker",
   "all"
 };
-[Constructor(DOMString type, optional ExtendableEventInit eventInitDict = {}), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface ExtendableEvent : Event {
+  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});
   void waitUntil(Promise<any> f);
 };
 dictionary ExtendableEventInit : EventInit {
   // Defined for the forward compatibility across the derived events
 };
-[Constructor(DOMString type, FetchEventInit eventInitDict), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface FetchEvent : ExtendableEvent {
+  constructor(DOMString type, FetchEventInit eventInitDict);
   [SameObject] readonly attribute Request request;
   readonly attribute Promise<any> preloadResponse;
   readonly attribute DOMString clientId;
@@ -168,8 +170,9 @@ dictionary FetchEventInit : ExtendableEventInit {
   DOMString resultingClientId = "";
   DOMString replacesClientId = "";
 };
-[Constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {}), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface ExtendableMessageEvent : ExtendableEvent {
+  constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {});
   readonly attribute any data;
   readonly attribute USVString origin;
   readonly attribute DOMString lastEventId;
@@ -366,8 +369,9 @@ enum ClientType {
   "all"
 };
 
-[Constructor(DOMString type, optional ExtendableEventInit eventInitDict = {}), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface ExtendableEvent : Event {
+  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});
   void waitUntil(Promise<any> f);
 };
 
@@ -375,8 +379,9 @@ dictionary ExtendableEventInit : EventInit {
   // Defined for the forward compatibility across the derived events
 };
 
-[Constructor(DOMString type, FetchEventInit eventInitDict), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface FetchEvent : ExtendableEvent {
+  constructor(DOMString type, FetchEventInit eventInitDict);
   [SameObject] readonly attribute Request request;
   readonly attribute Promise<any> preloadResponse;
   readonly attribute DOMString clientId;
@@ -394,8 +399,9 @@ dictionary FetchEventInit : ExtendableEventInit {
   DOMString replacesClientId = "";
 };
 
-[Constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {}), Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface ExtendableMessageEvent : ExtendableEvent {
+  constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {});
   readonly attribute any data;
   readonly attribute USVString origin;
   readonly attribute DOMString lastEventId;

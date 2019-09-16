@@ -30,7 +30,7 @@ import org.w3c.xhr.*
 /**
  * Exposes the JavaScript [Blob](https://developer.mozilla.org/en/docs/Web/API/Blob) to Kotlin
  */
-external open class Blob(blobParts: Array<dynamic> = definedExternally, options: BlobPropertyBag = definedExternally) : ImageBitmapSource {
+external abstract class Blob : ImageBitmapSource {
     open val size: Number
     open val type: String
     fun slice(start: Int = definedExternally, end: Int = definedExternally, contentType: String = definedExternally): Blob
@@ -59,7 +59,7 @@ inline fun BlobPropertyBag(type: String? = "", endings: EndingType? = EndingType
 /**
  * Exposes the JavaScript [File](https://developer.mozilla.org/en/docs/Web/API/File) to Kotlin
  */
-external open class File(fileBits: Array<dynamic>, fileName: String, options: FilePropertyBag = definedExternally) : Blob {
+external abstract class File : Blob {
     open val name: String
     open val lastModified: Int
 }
@@ -118,14 +118,12 @@ external open class FileReader : EventTarget {
 /**
  * Exposes the JavaScript [FileReaderSync](https://developer.mozilla.org/en/docs/Web/API/FileReaderSync) to Kotlin
  */
-external open class FileReaderSync {
+external abstract class FileReaderSync {
     fun readAsArrayBuffer(blob: Blob): ArrayBuffer
     fun readAsBinaryString(blob: Blob): String
     fun readAsText(blob: Blob, encoding: String = definedExternally): String
     fun readAsDataURL(blob: Blob): String
 }
-
-external interface BufferSource
 
 /* please, don't implement this interface! */
 @Suppress("NESTED_CLASS_IN_EXTERNAL_INTERFACE")

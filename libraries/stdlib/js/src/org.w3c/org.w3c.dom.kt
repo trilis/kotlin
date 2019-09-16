@@ -173,6 +173,7 @@ external open class HTMLElement : Element {
     var inputMode: String
     var dataset: DOMStringMap
     var nonce: String
+    var autofocus: Boolean
     var tabIndex: Int
     var style: CSSStyleDeclaration
     fun click()
@@ -2011,7 +2012,6 @@ external open class HTMLInputElement : HTMLElement {
     var accept: String
     var alt: String
     var autocomplete: String
-    var autofocus: Boolean
     var defaultChecked: Boolean
     var checked: Boolean
     var dirName: String
@@ -2090,7 +2090,6 @@ external open class HTMLInputElement : HTMLElement {
  * Exposes the JavaScript [HTMLButtonElement](https://developer.mozilla.org/en/docs/Web/API/HTMLButtonElement) to Kotlin
  */
 external open class HTMLButtonElement : HTMLElement {
-    var autofocus: Boolean
     var disabled: Boolean
     open val form: HTMLFormElement?
     var formAction: String
@@ -2136,7 +2135,6 @@ external open class HTMLButtonElement : HTMLElement {
  */
 external open class HTMLSelectElement : HTMLElement, ItemArrayLike<Element> {
     var autocomplete: String
-    var autofocus: Boolean
     var disabled: Boolean
     open val form: HTMLFormElement?
     var multiple: Boolean
@@ -2287,7 +2285,6 @@ external open class HTMLOptionElement : HTMLElement, UnionHTMLOptGroupElementOrH
  */
 external open class HTMLTextAreaElement : HTMLElement {
     var autocomplete: String
-    var autofocus: Boolean
     var cols: Int
     var dirName: String
     var disabled: Boolean
@@ -4806,6 +4803,11 @@ external open class Document : Node, GeometryUtils {
     fun append(vararg nodes: dynamic)
     fun querySelector(selectors: String): Element?
     fun querySelectorAll(selectors: String): NodeList
+    fun createExpression(expression: String, resolver: XPathNSResolver? = definedExternally): XPathExpression
+    fun createExpression(expression: String, resolver: ((String?) -> String?)? = definedExternally): XPathExpression
+    fun createNSResolver(nodeResolver: Node): XPathNSResolver
+    fun evaluate(expression: String, contextNode: Node, resolver: XPathNSResolver? = definedExternally, type: Short = definedExternally, result: XPathResult? = definedExternally): XPathResult
+    fun evaluate(expression: String, contextNode: Node, resolver: ((String?) -> String?)? = definedExternally, type: Short = definedExternally, result: XPathResult? = definedExternally): XPathResult
     override fun getBoxQuads(options: BoxQuadOptions /* = definedExternally */): Array<DOMQuad>
     override fun convertQuadFromNode(quad: DOMQuadInit, from: dynamic, options: ConvertCoordinateOptions /* = definedExternally */): DOMQuad
     override fun convertRectFromNode(rect: DOMRectReadOnly, from: dynamic, options: ConvertCoordinateOptions /* = definedExternally */): DOMQuad
@@ -5324,7 +5326,32 @@ external abstract class AbstractRange {
     open val collapsed: Boolean
 }
 
-external abstract class StaticRange : AbstractRange
+external interface StaticRangeInit {
+    var startContainer: Node?
+        get() = definedExternally
+        set(value) = definedExternally
+    var startOffset: Int?
+        get() = definedExternally
+        set(value) = definedExternally
+    var endContainer: Node?
+        get() = definedExternally
+        set(value) = definedExternally
+    var endOffset: Int?
+        get() = definedExternally
+        set(value) = definedExternally
+}
+
+@kotlin.internal.InlineOnly
+inline fun StaticRangeInit(startContainer: Node?, startOffset: Int?, endContainer: Node?, endOffset: Int?): StaticRangeInit {
+    val o = js("({})")
+    o["startContainer"] = startContainer
+    o["startOffset"] = startOffset
+    o["endContainer"] = endContainer
+    o["endOffset"] = endOffset
+    return o
+}
+
+external open class StaticRange(init: StaticRangeInit) : AbstractRange
 
 /**
  * Exposes the JavaScript [Range](https://developer.mozilla.org/en/docs/Web/API/Range) to Kotlin
@@ -5437,6 +5464,47 @@ external abstract class DOMTokenList : ItemArrayLike<String> {
 
 @kotlin.internal.InlineOnly
 inline operator fun DOMTokenList.get(index: Int): String? = asDynamic()[index]
+
+external abstract class XPathResult {
+    open val resultType: Short
+    open val numberValue: Double
+    open val stringValue: String
+    open val booleanValue: Boolean
+    open val singleNodeValue: Node?
+    open val invalidIteratorState: Boolean
+    open val snapshotLength: Int
+    fun iterateNext(): Node?
+    fun snapshotItem(index: Int): Node?
+
+    companion object {
+        val ANY_TYPE: Short
+        val NUMBER_TYPE: Short
+        val STRING_TYPE: Short
+        val BOOLEAN_TYPE: Short
+        val UNORDERED_NODE_ITERATOR_TYPE: Short
+        val ORDERED_NODE_ITERATOR_TYPE: Short
+        val UNORDERED_NODE_SNAPSHOT_TYPE: Short
+        val ORDERED_NODE_SNAPSHOT_TYPE: Short
+        val ANY_UNORDERED_NODE_TYPE: Short
+        val FIRST_ORDERED_NODE_TYPE: Short
+    }
+}
+
+external abstract class XPathExpression {
+    fun evaluate(contextNode: Node, type: Short = definedExternally, result: XPathResult? = definedExternally): XPathResult
+}
+
+external interface XPathNSResolver {
+    fun lookupNamespaceURI(prefix: String?): String?
+}
+
+external open class XPathEvaluator {
+    fun createExpression(expression: String, resolver: XPathNSResolver? = definedExternally): XPathExpression
+    fun createExpression(expression: String, resolver: ((String?) -> String?)? = definedExternally): XPathExpression
+    fun createNSResolver(nodeResolver: Node): XPathNSResolver
+    fun evaluate(expression: String, contextNode: Node, resolver: XPathNSResolver? = definedExternally, type: Short = definedExternally, result: XPathResult? = definedExternally): XPathResult
+    fun evaluate(expression: String, contextNode: Node, resolver: ((String?) -> String?)? = definedExternally, type: Short = definedExternally, result: XPathResult? = definedExternally): XPathResult
+}
 
 external abstract class Selection {
     open val anchorNode: Node?

@@ -8,8 +8,8 @@ public val org.w3c.files.EndingType.Companion.TRANSPARENT: org.w3c.files.EndingT
 @kotlin.internal.InlineOnly public inline fun FilePropertyBag(/*0*/ lastModified: kotlin.Int? = ..., /*1*/ type: kotlin.String? = ..., /*2*/ endings: org.w3c.files.EndingType? = ...): org.w3c.files.FilePropertyBag
 @kotlin.internal.InlineOnly public inline operator fun org.w3c.files.FileList.get(/*0*/ index: kotlin.Int): org.w3c.files.File?
 
-public open external class Blob : org.w3c.dom.ImageBitmapSource {
-    /*primary*/ public constructor Blob(/*0*/ blobParts: kotlin.Array<dynamic> = ..., /*1*/ options: org.w3c.files.BlobPropertyBag = ...)
+public abstract external class Blob : org.w3c.dom.ImageBitmapSource {
+    /*primary*/ public constructor Blob()
     public open val size: kotlin.Number
         public open fun <get-size>(): kotlin.Number
     public open val type: kotlin.String
@@ -35,12 +35,6 @@ public external interface BlobPropertyBag {
     public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
 }
 
-public external interface BufferSource {
-    public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
-    public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
-    public open override /*1*/ /*fake_override*/ fun toString(): kotlin.String
-}
-
 @kotlin.Suppress(names = {"NESTED_CLASS_IN_EXTERNAL_INTERFACE"}) public external interface EndingType {
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int
@@ -54,8 +48,8 @@ public external interface BufferSource {
     }
 }
 
-public open external class File : org.w3c.files.Blob {
-    /*primary*/ public constructor File(/*0*/ fileBits: kotlin.Array<dynamic>, /*1*/ fileName: kotlin.String, /*2*/ options: org.w3c.files.FilePropertyBag = ...)
+public abstract external class File : org.w3c.files.Blob {
+    /*primary*/ public constructor File()
     public open val lastModified: kotlin.Int
         public open fun <get-lastModified>(): kotlin.Int
     public open val name: kotlin.String
@@ -152,7 +146,7 @@ public open external class FileReader : org.w3c.dom.events.EventTarget {
     }
 }
 
-public open external class FileReaderSync {
+public abstract external class FileReaderSync {
     /*primary*/ public constructor FileReaderSync()
     public open override /*1*/ /*fake_override*/ fun equals(/*0*/ other: kotlin.Any?): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ fun hashCode(): kotlin.Int

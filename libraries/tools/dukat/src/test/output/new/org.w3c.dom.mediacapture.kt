@@ -210,8 +210,6 @@ public open external class MediaDevices : org.w3c.dom.events.EventTarget {
 
 public open external class MediaStream : org.w3c.dom.events.EventTarget {
     /*primary*/ public constructor MediaStream()
-    public constructor MediaStream(/*0*/ tracks: kotlin.Array<org.w3c.dom.mediacapture.MediaStreamTrack>)
-    public constructor MediaStream(/*0*/ stream: org.w3c.dom.mediacapture.MediaStream)
     public open val active: kotlin.Boolean
         public open fun <get-active>(): kotlin.Boolean
     public open val id: kotlin.String
@@ -292,7 +290,7 @@ public open external class MediaStreamTrack : org.w3c.dom.events.EventTarget {
 }
 
 public open external class MediaStreamTrackEvent : org.w3c.dom.events.Event {
-    /*primary*/ public constructor MediaStreamTrackEvent(/*0*/ type: kotlin.String, /*1*/ eventInitDict: org.w3c.dom.mediacapture.MediaStreamTrackEventInit)
+    /*primary*/ public constructor MediaStreamTrackEvent()
     public open override /*1*/ /*fake_override*/ val bubbles: kotlin.Boolean
         public open override /*1*/ /*fake_override*/ fun <get-bubbles>(): kotlin.Boolean
     public open override /*1*/ /*fake_override*/ val cancelable: kotlin.Boolean
