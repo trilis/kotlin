@@ -3373,8 +3373,6 @@ external open class Window : EventTarget, MessageEventSource {
     fun captureEvents()
     fun releaseEvents()
     fun getSelection(): Selection
-    fun requestAnimationFrame(callback: (Double) -> Unit): Int
-    fun cancelAnimationFrame(handle: Int)
     fun matchMedia(query: String): MediaQueryList
     fun moveTo(x: Int, y: Int)
     fun moveBy(x: Int, y: Int)
@@ -3397,6 +3395,8 @@ external open class Window : EventTarget, MessageEventSource {
     fun createImageBitmap(image: ImageBitmapSource, options: ImageBitmapOptions = definedExternally): Promise<ImageBitmap>
     fun createImageBitmap(image: ImageBitmapSource, sx: Int, sy: Int, sw: Int, sh: Int, options: ImageBitmapOptions = definedExternally): Promise<ImageBitmap>
     fun fetch(input: dynamic, init: RequestInit = definedExternally): Promise<Response>
+    fun requestAnimationFrame(callback: (Double) -> Unit): Int
+    fun cancelAnimationFrame(handle: Int)
 }
 
 @kotlin.internal.InlineOnly
